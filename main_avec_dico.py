@@ -21,7 +21,7 @@ def rAC():
 objectif = {"oa2": 2, "oa3": 0, "oa4": 0, "ob1": 1}
 
 # Indice de choix du motif
-dico_idM = {"idM": 0}
+dico_idM = {"idM": 0, "ancient_idM": 0}
 
 def idMotif():
     dico_idM["idM"] = abs(objectif["oa2"] - case["a2"]) + abs(objectif["oa3"] - case["a3"]) + abs(objectif["oa4"] - case["a4"]) + abs(objectif["ob1"] - case["b1"])
@@ -56,11 +56,28 @@ totMotif = {"totAB": 0, "totAC": 0}
 # Choix du motif et application
 print(case)
 
-for i in range(3):
+while dico_idM["idM"] <= dico_idM["ancient_idM"]:
+    dico_idM["ancient_idM"] = dico_idM["idM"]
+
     idM_par_motif()   # Définir l'indice de choix du motif
     print("idMotif : " + str(idM_motif))
-    res =  [key for key in idM_motif if     # Choisir le motif qui a le plus faible idM (et qui n'est pas déjà utilisé si il y en a plusieurs avec la même valeur)
+    res =  [key for key in idM_motif if     # Choisir le motif qui a le plus faible idM
         all(idM_motif[temp] >= idM_motif[key]
         for temp in idM_motif)]
     print("Keys with minimum values are : " + str(res))
+
+    print(values(str(res)))
+
+    if 'idAB' in str(res):
+        AB()
+        print("apply AB")
+        totMotif["totAB"] = totMotif["totAB"] + 1
+    if 'idAC' in str(res):
+        AC()
+        print("apply AC")
+        totMotif["totAC"] = totMotif["totAC"] + 1
     
+
+print(case)
+print("totAB : ", totMotif["totAB"])
+print("totAC : ", totMotif["totAC"])
