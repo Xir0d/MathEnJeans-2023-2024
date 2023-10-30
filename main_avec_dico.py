@@ -10,112 +10,216 @@ def AC():
     case["b1"] = case["b1"] + 1
 
 def AD():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] + 1
+    case["a3"] = case["a3"] + 1
+    case["b2"] = case["b2"] + 1
+    case["c1"] = case["c1"] + 1
+    case["c2"] = case["c2"] + 1
+    case["d1"] = case["d1"] + 1
 
 def AE():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] + 1
+    case["b3"] = case["b3"] + 1
+    case["c2"] = case["c2"] + 1
+    case["c3"] = case["c3"] + 1
+    case["d2"] = case["d2"] + 1
+    case["e2"] = case["e2"] + 1
 
 def AF():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] + 1
+    case["b3"] = case["b3"] + 1
+    case["c3"] = case["c3"] + 1
+    case["c4"] = case["c4"] + 1
+    case["d4"] = case["d4"] + 1
+    case["e4"] = case["e4"] + 1
 
 def AG():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] + 1
+    case["a4"] = case["a4"] + 1
+    case["b4"] = case["b4"] + 1
+    case["c4"] = case["c4"] + 1
+    case["c5"] = case["c5"] + 1
+    case["d5"] = case["d5"] + 1
 
 def AH():
-    case[""] = case[""] + 1
+    case["a4"] = case["a4"] + 1
+    case["b5"] = case["b5"] + 1
 
 def AI():
-    case[""] = case[""] + 1
+    case["a4"] = case["a4"] + 1
 
 def BC():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] + 1
 
 def BD():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] + 1
+    case["c1"] = case["c1"] + 1
+    case["d1"] = case["d1"] + 1
 
 def BE():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] + 1
+    case["c1"] = case["c1"] + 1
+    case["c2"] = case["c2"] + 1
+    case["d2"] = case["d2"] + 1
+    case["e2"] = case["e2"] + 1
 
 def BF():
-    case[""] = case[""] + 1
+    case["b2"] = case["b2"] + 1
+    case["c2"] = case["c2"] + 1
+    case["c3"] = case["c3"] + 1
+    case["d3"] = case["d3"] + 1
+    case["e3"] = case["e3"] + 1
+    case["e4"] = case["e4"] + 1
 
 def BG():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] + 1
+    case["b2"] = case["b2"] + 1
+    case["b3"] = case["b3"] + 1
+    case["c3"] = case["c3"] + 1
+    case["c4"] = case["c4"] + 1
+    case["d4"] = case["d4"] + 1
+    case["d5"] = case["d5"] + 1
 
 def BH():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] + 1
+    case["a3"] = case["a3"] + 1
+    case["b3"] = case["b3"] + 1
+    case["b4"] = case["b4"] + 1
+    case["b5"] = case["b5"] + 1
 
 def BI():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] + 1
+    case["a3"] = case["a3"] + 1
+    case["a4"] = case["a4"] + 1
 
-def CD():
-    case[""] = case[""] + 1
+# Rien pour CD
 
 def CE():
-    case[""] = case[""] + 1
+    case["c1"] = case["c1"] + 1
+    case["d1"] = case["d1"] + 1
+    case["e2"] = case["e2"] + 1
 
 def CF():
-    case[""] = case[""] + 1
+    case["c1"] = case["c1"] + 1
+    case["d1"] = case["d1"] + 1
+    case["d2"] = case["d2"] + 1
+    case["e3"] = case["e3"] + 1
+    case["e4"] = case["e4"] + 1
 
 def CG():
-    case[""] = case[""] + 1
+    case["c1"] = case["c1"] + 1
+    case["c2"] = case["c2"] + 1
+    case["c3"] = case["c3"] + 1
+    case["d3"] = case["d3"] + 1
+    case["d4"] = case["d4"] + 1
+    case["d5"] = case["d5"] + 1
 
 def CH():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] + 1
+    case["b2"] = case["b2"] + 1
+    case["b3"] = case["b3"] + 1
+    case["b4"] = case["b4"] + 1
+    case["b5"] = case["b5"] + 1
+    case["c1"] = case["c1"] + 1
+    case["c2"] = case["c2"] + 1
+    case["c3"] = case["c3"] + 1
+    case["c4"] = case["c4"] + 1
+    case["c5"] = case["c5"] + 1
 
 def CI():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] + 1
+    case["a4"] = case["a4"] + 1
+    case["b1"] = case["b1"] + 1
+    case["b2"] = case["b2"] + 1
+    case["b3"] = case["b3"] + 1
 
 def DE():
-    case[""] = case[""] + 1
+    case["e2"] = case["e2"] + 1
 
 def DF():
-    case[""] = case[""] + 1
+    case["e2"] = case["e2"] + 1
+    case["e3"] = case["e3"] + 1
 
 def DG():
-    case[""] = case[""] + 1
+    case["d1"] = case["d1"] + 1
+    case["d2"] = case["d2"] + 1
+    case["d3"] = case["d3"] + 1
+    case["d4"] = case["d4"] + 1
+    case["d5"] = case["d5"] + 1
+    case["e2"] = case["e2"] + 1
+    case["e3"] = case["e3"] + 1
+    case["e4"] = case["e4"] + 1
 
 def DH():
-    case[""] = case[""] + 1
+    case["c3"] = case["c3"] + 1
+    case["c4"] = case["c4"] + 1
+    case["c5"] = case["c5"] + 1
+    case["d1"] = case["d1"] + 1
+    case["d2"] = case["d2"] + 1
+    case["d3"] = case["d3"] + 1
 
 def DI():
-    case[""] = case[""] + 1
+    case["a4"] = case["a4"] + 1
+    case["b3"] = case["b3"] + 1
+    case["b4"] = case["b4"] + 1
+    case["c2"] = case["c2"] + 1
+    case["c3"] = case["c3"] + 1
+    case["d1"] = case["d1"] + 1
+    case["d2"] = case["d2"] + 1
 
-def EF():
-    case[""] = case[""] + 1
+# Rien pour EF
 
 def EG():
-    case[""] = case[""] + 1
+    case["e3"] = case["e3"] + 1
+    case["e4"] = case["e4"] + 1
 
 def EH():
-    case[""] = case[""] + 1
+    case["c5"] = case["c5"] + 1
+    case["d4"] = case["d4"] + 1
+    case["d5"] = case["d5"] + 1
+    case["e2"] = case["e2"] + 1
+    case["e3"] = case["e3"] + 1
 
 def EI():
-    case[""] = case[""] + 1
+    case["b4"] = case["b4"] + 1
+    case["c3"] = case["c3"] + 1
+    case["c4"] = case["c4"] + 1
+    case["d3"] = case["d3"] + 1
+    case["e2"] = case["e2"] + 1
+    case["e3"] = case["e3"] + 1
 
 def FG():
-    case[""] = case[""] + 1
+    case["e4"] = case["e4"] + 1
 
 def FH():
-    case[""] = case[""] + 1
+    case["c5"] = case["c5"] + 1
+    case["d5"] = case["d5"] + 1
+    case["e4"] = case["e4"] + 1
 
 def FI():
-    case[""] = case[""] + 1
+    case["b5"] = case["b5"] + 1
+    case["c4"] = case["c4"] + 1
+    case["c5"] = case["c5"] + 1
+    case["d4"] = case["d4"] + 1
+    case["e4"] = case["e4"] + 1
 
-def GH():
-    case[""] = case[""] + 1
+# Rien pour GH
 
 def GI():
-    case[""] = case[""] + 1
+    case["b5"] = case["b5"] + 1
+    case["c5"] = case["c5"] + 1
+    case["d5"] = case["d5"] + 1
 
 def HI():
-    case[""] = case[""] + 1
+    case["b5"] = case["b5"] + 1
 
 
 def END():
     case["a2"] = case["a2"]
 
+
 # Annuler action motif
+
 def rAB():
     case["a2"] = case["a2"] - 1
 
@@ -124,119 +228,222 @@ def rAC():
     case["b1"] = case["b1"] - 1
 
 def rAD():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] - 1
+    case["a3"] = case["a3"] - 1
+    case["b2"] = case["b2"] - 1
+    case["c1"] = case["c1"] - 1
+    case["c2"] = case["c2"] - 1
+    case["d1"] = case["d1"] - 1
 
 def rAE():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] - 1
+    case["b3"] = case["b3"] - 1
+    case["c2"] = case["c2"] - 1
+    case["c3"] = case["c3"] - 1
+    case["d2"] = case["d2"] - 1
+    case["e2"] = case["e2"] - 1
 
 def rAF():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] - 1
+    case["b3"] = case["b3"] - 1
+    case["c3"] = case["c3"] - 1
+    case["c4"] = case["c4"] - 1
+    case["d4"] = case["d4"] - 1
+    case["e4"] = case["e4"] - 1
 
 def rAG():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] - 1
+    case["a4"] = case["a4"] - 1
+    case["b4"] = case["b4"] - 1
+    case["c4"] = case["c4"] - 1
+    case["c5"] = case["c5"] - 1
+    case["d5"] = case["d5"] - 1
 
 def rAH():
-    case[""] = case[""] + 1
+    case["a4"] = case["a4"] - 1
+    case["b5"] = case["b5"] - 1
 
 def rAI():
-    case[""] = case[""] + 1
+    case["a4"] = case["a4"] - 1
 
 def rBC():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] - 1
 
 def rBD():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] - 1
+    case["c1"] = case["c1"] - 1
+    case["d1"] = case["d1"] - 1
 
 def rBE():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] - 1
+    case["c1"] = case["c1"] - 1
+    case["c2"] = case["c2"] - 1
+    case["d2"] = case["d2"] - 1
+    case["e2"] = case["e2"] - 1
 
 def rBF():
-    case[""] = case[""] + 1
+    case["b2"] = case["b2"] - 1
+    case["c2"] = case["c2"] - 1
+    case["c3"] = case["c3"] - 1
+    case["d3"] = case["d3"] - 1
+    case["e3"] = case["e3"] - 1
+    case["e4"] = case["e4"] - 1
 
 def rBG():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] - 1
+    case["b2"] = case["b2"] - 1
+    case["b3"] = case["b3"] - 1
+    case["c3"] = case["c3"] - 1
+    case["c4"] = case["c4"] - 1
+    case["d4"] = case["d4"] - 1
+    case["d5"] = case["d5"] - 1
 
 def rBH():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] - 1
+    case["a3"] = case["a3"] - 1
+    case["b3"] = case["b3"] - 1
+    case["b4"] = case["b4"] - 1
+    case["b5"] = case["b5"] - 1
 
 def rBI():
-    case[""] = case[""] + 1
+    case["a2"] = case["a2"] - 1
+    case["a3"] = case["a3"] - 1
+    case["a4"] = case["a4"] - 1
 
-def rCD():
-    case[""] = case[""] + 1
+# Rien pour CD
 
 def rCE():
-    case[""] = case[""] + 1
+    case["c1"] = case["c1"] - 1
+    case["d1"] = case["d1"] - 1
+    case["e2"] = case["e2"] - 1
 
 def rCF():
-    case[""] = case[""] + 1
+    case["c1"] = case["c1"] - 1
+    case["d1"] = case["d1"] - 1
+    case["d2"] = case["d2"] - 1
+    case["e3"] = case["e3"] - 1
+    case["e4"] = case["e4"] - 1
 
 def rCG():
-    case[""] = case[""] + 1
+    case["c1"] = case["c1"] - 1
+    case["c2"] = case["c2"] - 1
+    case["c3"] = case["c3"] - 1
+    case["d3"] = case["d3"] - 1
+    case["d4"] = case["d4"] - 1
+    case["d5"] = case["d5"] - 1
 
 def rCH():
-    case[""] = case[""] + 1
+    case["b1"] = case["b1"] - 1
+    case["b2"] = case["b2"] - 1
+    case["b3"] = case["b3"] - 1
+    case["b4"] = case["b4"] - 1
+    case["b5"] = case["b5"] - 1
+    case["c1"] = case["c1"] - 1
+    case["c2"] = case["c2"] - 1
+    case["c3"] = case["c3"] - 1
+    case["c4"] = case["c4"] - 1
+    case["c5"] = case["c5"] - 1
 
 def rCI():
-    case[""] = case[""] + 1
+    case["a3"] = case["a3"] - 1
+    case["a4"] = case["a4"] - 1
+    case["b1"] = case["b1"] - 1
+    case["b2"] = case["b2"] - 1
+    case["b3"] = case["b3"] - 1
 
 def rDE():
-    case[""] = case[""] + 1
+    case["e2"] = case["e2"] - 1
 
 def rDF():
-    case[""] = case[""] + 1
+    case["e2"] = case["e2"] - 1
+    case["e3"] = case["e3"] - 1
 
 def rDG():
-    case[""] = case[""] + 1
+    case["d1"] = case["d1"] - 1
+    case["d2"] = case["d2"] - 1
+    case["d3"] = case["d3"] - 1
+    case["d4"] = case["d4"] - 1
+    case["d5"] = case["d5"] - 1
+    case["e2"] = case["e2"] - 1
+    case["e3"] = case["e3"] - 1
+    case["e4"] = case["e4"] - 1
 
 def rDH():
-    case[""] = case[""] + 1
+    case["c3"] = case["c3"] - 1
+    case["c4"] = case["c4"] - 1
+    case["c5"] = case["c5"] - 1
+    case["d1"] = case["d1"] - 1
+    case["d2"] = case["d2"] - 1
+    case["d3"] = case["d3"] - 1
 
 def rDI():
-    case[""] = case[""] + 1
+    case["a4"] = case["a4"] - 1
+    case["b3"] = case["b3"] - 1
+    case["b4"] = case["b4"] - 1
+    case["c2"] = case["c2"] - 1
+    case["c3"] = case["c3"] - 1
+    case["d1"] = case["d1"] - 1
+    case["d2"] = case["d2"] - 1
 
-def rEF():
-    case[""] = case[""] + 1
+# Rien pour EF
 
 def rEG():
-    case[""] = case[""] + 1
+    case["e3"] = case["e3"] - 1
+    case["e4"] = case["e4"] - 1
 
 def rEH():
-    case[""] = case[""] + 1
+    case["c5"] = case["c5"] - 1
+    case["d4"] = case["d4"] - 1
+    case["d5"] = case["d5"] - 1
+    case["e2"] = case["e2"] - 1
+    case["e3"] = case["e3"] - 1
 
 def rEI():
-    case[""] = case[""] + 1
+    case["b4"] = case["b4"] - 1
+    case["c3"] = case["c3"] - 1
+    case["c4"] = case["c4"] - 1
+    case["d3"] = case["d3"] - 1
+    case["e2"] = case["e2"] - 1
+    case["e3"] = case["e3"] - 1
 
 def rFG():
-    case[""] = case[""] + 1
+    case["e4"] = case["e4"] - 1
 
 def rFH():
-    case[""] = case[""] + 1
+    case["c5"] = case["c5"] - 1
+    case["d5"] = case["d5"] - 1
+    case["e4"] = case["e4"] - 1
 
 def rFI():
-    case[""] = case[""] + 1
+    case["b5"] = case["b5"] - 1
+    case["c4"] = case["c4"] - 1
+    case["c5"] = case["c5"] - 1
+    case["d4"] = case["d4"] - 1
+    case["e4"] = case["e4"] - 1
 
-def rGH():
-    case[""] = case[""] + 1
+# Rien pour GH
 
 def rGI():
-    case[""] = case[""] + 1
+    case["b5"] = case["b5"] - 1
+    case["c5"] = case["c5"] - 1
+    case["d5"] = case["d5"] - 1
 
 def rHI():
-    case[""] = case[""] + 1
+    case["b5"] = case["b5"] - 1
 
 
 def rEND():
     case["a2"] = case["a2"]
 
+
 # Objectif final
-objectif = {"oa2": 0, "oa3": 0, "oa4": 0, "ob1": 0, "ob2": 20, "ob3": 0, "ob4": 20, "ob5": 0, "oc1": 0, "oc2": 0, "oc3": 0, "oc4": 0, "oc5": 0, "od1": 0, "od2": 20, "od3": 20, "od4": 20, "od5": 0, "oe2": 0, "oe3": 0, "oe4": 0}
+objectif = {"oa2": 0, "oa3": 0, "oa4": 0, "ob1": 0, "ob2": 100, "ob3": 0, "ob4": 100, "ob5": 0, "oc1": 0, "oc2": 0, "oc3": 0, "oc4": 0, "oc5": 0, "od1": 0, "od2": 100, "od3": 100, "od4": 100, "od5": 0, "oe2": 0, "oe3": 0, "oe4": 0}
 
 # Indice de choix du motif
 dico_idM = {"idM": 0}
 
 def idMotif():
-    dico_idM["idM"] = abs(objectif["oa2"] - case["a2"]) + abs(objectif["oa3"] - case["a3"]) + abs(objectif["oa4"] - case["a4"]) + abs(objectif["ob1"] - case["b1"]) + abs(objectif["ob2"] - case["b2"]) + abs(objectif["ob3"] - case["b3"]) + abs(objectif["ob4"] - case["b4"]) + abs(objectif["ob5"] - case["b5"]) + abs(objectif["oc1"] - case["c1"]) + abs(objectif["oc2"] - case["c2"]) + abs(objectif["oc3"] - case["c3"]) + abs(objectif["oc4"] - case["c4"]) + abs(objectif["oc5"] - case["c5"]) + abs(objectif["od1"] - case["d1"]) + abs(objectif["od2"] - case["d2"]) + abs(objectif["od3"] - case["d3"]) + abs(objectif["od4"] - case["d4"]) + abs(objectif["od5"] - case["d5"]) + abs(objectif["oe2"] - case["e2"]) + abs(objectif["oe3"] - case["e3"]) + abs(objectif["oe4"] - case["e4"])
+    dico_idM["idM"] = abs(objectif["oa2"] - case["a2"]) + abs(objectif["oa3"] - case["a3"]) + abs(objectif["oa4"] - case["a4"]) + abs(objectif["ob1"] - case["b1"]) + abs(objectif["ob2"] - case["b2"]) + abs(objectif["ob3"] - case["b3"]) + abs(objectif["ob4"] - case["b4"]) + abs(objectif["ob5"] - case["b5"]) + abs(objectif["oc1"] - case["c1"]) + abs(objectif["oc2"] - case["c2"]) + abs(objectif["oc3"] - case["c3"]) + abs(objectif["oc4"] - case["c4"]) + abs(objectif["oc5"] - case["c5"]) + abs(objectif["od1"] - case["d1"]) + abs(objectif["od2"] - case["d2"]) + abs(objectif["od3"] - case["d3"]) + abs(objectif["od4"] - case["d4"]) + abs(objectif["od5"] - case["d5"]) + abs(objectif["oe2"] - case["e2"]) + abs(objectif["oe3"] - case["e3"]) + abs(objectif["oe4"] - case["e4"])     # x coef optionnel sur les bords car moins importants
     # print("idM : ", dico_idM["idM"])
     # print("idM de a2 : ", abs(objectif["oa2"] - case["a2"]))
     # print("idM de a3 : ", abs(objectif["oa3"] - case["a3"]))
@@ -244,224 +451,206 @@ def idMotif():
     # print("idM de b1 : ", abs(objectif["ob1"] - case["b1"]))
 
 # Définition de l'idM par motif
-idM_motif = {"idAB": 0, "idAC": 0, "idAD": 0, "idAE": 0, "idAF": 0, "idAG": 0, "idAH": 0, "idAI": 0, "idBC": 0, "idBD": 0, "idBE": 0, "idBF": 0, "idBG": 0, "idBH": 0, "idBI": 0, "idCD": 0, "idCE": 0, "idCF": 0, "idCG": 0, "idCH": 0, "idCI": 0, "idDE": 0, "idDF": 0, "idDG": 0, "idDH": 0, "idDI": 0, "idEF": 0, "idEG": 0, "idEH": 0, "idEI": 0, "idFG": 0, "idFH": 0, "idFI": 0, "idGH": 0, "idGI": 0, "idHI": 0, "idEND": 0}
+idM_motif = {"idAB": 0, "idAC": 0, "idAD": 0, "idAE": 0, "idAF": 0, "idAG": 0, "idAH": 0, "idAI": 0, "idBC": 0, "idBD": 0, "idBE": 0, "idBF": 0, "idBG": 0, "idBH": 0, "idBI": 0, "idCD": 1000, "idCE": 0, "idCF": 0, "idCG": 0, "idCH": 0, "idCI": 0, "idDE": 0, "idDF": 0, "idDG": 0, "idDH": 0, "idDI": 0, "idEF": 1000, "idEG": 0, "idEH": 0, "idEI": 0, "idFG": 0, "idFH": 0, "idFI": 0, "idGH": 1000, "idGI": 0, "idHI": 0, "idEND": 0}
 
 def idM_par_motif():
     AB()
     # print("idM pour AB :")
     idMotif()
-    idM_motif["idAB"] = dico_idM["idM"]
+    idM_motif["idAB"] = dico_idM["idM"] + totMotif["totAB"]
     rAB()
     print("idAB : ", idM_motif["idAB"])
 
     AC()
     # print("idM pour AC :")
     idMotif()
-    idM_motif["idAC"] = dico_idM["idM"]
+    idM_motif["idAC"] = dico_idM["idM"] + totMotif["totAC"]
     rAC()
     print("idAC : ", idM_motif["idAC"])
 
     AD()
     idMotif()
-    idM_motif["idAD"] = dico_idM["idM"]
+    idM_motif["idAD"] = dico_idM["idM"] + totMotif["totAD"]
     rAD()
     print("idAD : ", idM_motif["idAD"])
 
     AE()
     idMotif()
-    idM_motif["idAE"] = dico_idM["idM"]
+    idM_motif["idAE"] = dico_idM["idM"] + totMotif["totAE"]
     rAE()
     print("idAE : ", idM_motif["idAE"])
 
     AF()
     idMotif()
-    idM_motif["idAF"] = dico_idM["idM"]
+    idM_motif["idAF"] = dico_idM["idM"] + totMotif["totAF"]
     rAF()
     print("idAF : ", idM_motif["idAF"])
 
     AG()
     idMotif()
-    idM_motif["idAG"] = dico_idM["idM"]
+    idM_motif["idAG"] = dico_idM["idM"] + totMotif["totAG"]
     rAG()
     print("idAG : ", idM_motif["idAG"])
 
     AH()
     idMotif()
-    idM_motif["idAH"] = dico_idM["idM"]
+    idM_motif["idAH"] = dico_idM["idM"] + totMotif["totAH"]
     rAH()
     print("idAH : ", idM_motif["idAH"])
 
     AI()
     idMotif()
-    idM_motif["idAI"] = dico_idM["idM"]
+    idM_motif["idAI"] = dico_idM["idM"] + totMotif["totAI"]
     rAI()
     print("idAI : ", idM_motif["idAI"])
 
     BC()
     idMotif()
-    idM_motif["idBC"] = dico_idM["idM"]
+    idM_motif["idBC"] = dico_idM["idM"] + totMotif["totBC"]
     rBC()
     print("idBC : ", idM_motif["idBC"])
 
     BD()
     idMotif()
-    idM_motif["idBD"] = dico_idM["idM"]
+    idM_motif["idBD"] = dico_idM["idM"] + totMotif["totBD"]
     rBD()
     print("idBD : ", idM_motif["idBD"])
 
     BE()
     idMotif()
-    idM_motif["idBE"] = dico_idM["idM"]
+    idM_motif["idBE"] = dico_idM["idM"] + totMotif["totBE"]
     rBE()
     print("idBE : ", idM_motif["idBE"])
 
     BF()
     idMotif()
-    idM_motif["idBF"] = dico_idM["idM"]
+    idM_motif["idBF"] = dico_idM["idM"] + totMotif["totBF"]
     rBF()
     print("idBF : ", idM_motif["idBF"])
 
     BG()
     idMotif()
-    idM_motif["idBG"] = dico_idM["idM"]
+    idM_motif["idBG"] = dico_idM["idM"] + totMotif["totBG"]
     rBG()
     print("idBG : ", idM_motif["idBG"])
 
     BH()
     idMotif()
-    idM_motif["idBH"] = dico_idM["idM"]
+    idM_motif["idBH"] = dico_idM["idM"] + totMotif["totBH"]
     rBH()
     print("idBH : ", idM_motif["idBH"])
 
     BI()
     idMotif()
-    idM_motif["idBI"] = dico_idM["idM"]
+    idM_motif["idBI"] = dico_idM["idM"] + totMotif["totBI"]
     rBI()
     print("idBI : ", idM_motif["idBI"])
 
-    CD()
-    idMotif()
-    idM_motif["idCD"] = dico_idM["idM"]
-    rCD()
-    print("idCD : ", idM_motif["idCD"])
-
     CE()
     idMotif()
-    idM_motif["idCE"] = dico_idM["idM"]
+    idM_motif["idCE"] = dico_idM["idM"] + totMotif["totCE"]
     rCE()
     print("idCE : ", idM_motif["idCE"])
 
     CF()
     idMotif()
-    idM_motif["idCF"] = dico_idM["idM"]
+    idM_motif["idCF"] = dico_idM["idM"] + totMotif["totCF"]
     rCF()
     print("idCF : ", idM_motif["idCF"])
 
     CG()
     idMotif()
-    idM_motif["idCG"] = dico_idM["idM"]
+    idM_motif["idCG"] = dico_idM["idM"] + totMotif["totCG"]
     rCG()
     print("idCG : ", idM_motif["idCG"])
 
     CH()
     idMotif()
-    idM_motif["idCH"] = dico_idM["idM"]
+    idM_motif["idCH"] = dico_idM["idM"] + totMotif["totCH"]
     rCH()
     print("idCH : ", idM_motif["idCH"])
 
     CI()
     idMotif()
-    idM_motif["idCI"] = dico_idM["idM"]
+    idM_motif["idCI"] = dico_idM["idM"] + totMotif["totCI"]
     rCI()
     print("idCI : ", idM_motif["idCI"])
 
     DE()
     idMotif()
-    idM_motif["idDE"] = dico_idM["idM"]
+    idM_motif["idDE"] = dico_idM["idM"] + totMotif["totDE"]
     rDE()
     print("idDE : ", idM_motif["idDE"])
 
     DF()
     idMotif()
-    idM_motif["idDF"] = dico_idM["idM"]
+    idM_motif["idDF"] = dico_idM["idM"] + totMotif["totDF"]
     rDF()
     print("idDF : ", idM_motif["idDF"])
 
     DG()
     idMotif()
-    idM_motif["idDG"] = dico_idM["idM"]
+    idM_motif["idDG"] = dico_idM["idM"] + totMotif["totDG"]
     rDG()
     print("idDG : ", idM_motif["idDG"])
 
     DH()
     idMotif()
-    idM_motif["idDH"] = dico_idM["idM"]
+    idM_motif["idDH"] = dico_idM["idM"] + totMotif["totDH"]
     rDH()
     print("idDH : ", idM_motif["idDH"])
 
     DI()
     idMotif()
-    idM_motif["idDI"] = dico_idM["idM"]
+    idM_motif["idDI"] = dico_idM["idM"] + totMotif["totDI"]
     rDI()
     print("idDI : ", idM_motif["idDI"])
 
-    EF()
-    idMotif()
-    idM_motif["idEF"] = dico_idM["idM"]
-    rEF()
-    print("idEF : ", idM_motif["idEF"])
-
     EG()
     idMotif()
-    idM_motif["idEG"] = dico_idM["idM"]
+    idM_motif["idEG"] = dico_idM["idM"] + totMotif["totEG"]
     rEG()
     print("idEG : ", idM_motif["idEG"])
 
     EH()
     idMotif()
-    idM_motif["idEH"] = dico_idM["idM"]
+    idM_motif["idEH"] = dico_idM["idM"] + totMotif["totEH"]
     rEH()
     print("idEH : ", idM_motif["idEH"])
 
     EI()
     idMotif()
-    idM_motif["idEI"] = dico_idM["idM"]
+    idM_motif["idEI"] = dico_idM["idM"] + totMotif["totEI"]
     rEI()
     print("idEI : ", idM_motif["idEI"])
 
     FG()
     idMotif()
-    idM_motif["idFG"] = dico_idM["idM"]
+    idM_motif["idFG"] = dico_idM["idM"] + totMotif["totFG"]
     rFG()
     print("idFG : ", idM_motif["idFG"])
 
     FH()
     idMotif()
-    idM_motif["idFH"] = dico_idM["idM"]
+    idM_motif["idFH"] = dico_idM["idM"] + totMotif["totFH"]
     rFH()
     print("idFH : ", idM_motif["idFH"])
 
     FI()
     idMotif()
-    idM_motif["idFI"] = dico_idM["idM"]
+    idM_motif["idFI"] = dico_idM["idM"] + totMotif["totFI"]
     rFI()
     print("idFI : ", idM_motif["idFI"])
 
-    GH()
-    idMotif()
-    idM_motif["idGH"] = dico_idM["idM"]
-    rGH()
-    print("idGH : ", idM_motif["idGH"])
-
     GI()
     idMotif()
-    idM_motif["idGI"] = dico_idM["idM"]
+    idM_motif["idGI"] = dico_idM["idM"] + totMotif["totGI"]
     rGI()
     print("idGI : ", idM_motif["idGI"])
 
     HI()
     idMotif()
-    idM_motif["idHI"] = dico_idM["idM"]
+    idM_motif["idHI"] = dico_idM["idM"] + totMotif["totHI"]
     rHI()
     print("idHI : ", idM_motif["idHI"])
 
@@ -550,10 +739,6 @@ while totMotif["totEND"] == 0:
         BI()
         print("-> apply BI")
         totMotif["totBI"] = totMotif["totBI"] + 1
-    if 'idCD' in str(res):
-        CD()
-        print("-> apply CD")
-        totMotif["totCD"] = totMotif["totCD"] + 1
     if 'idCE' in str(res):
         CE()
         print("-> apply CE")
@@ -594,10 +779,6 @@ while totMotif["totEND"] == 0:
         DI()
         print("-> apply DI")
         totMotif["totDI"] = totMotif["totDI"] + 1
-    if 'idEF' in str(res):
-        EF()
-        print("-> apply EF")
-        totMotif["totEF"] = totMotif["totEF"] + 1
     if 'idEG' in str(res):
         EG()
         print("-> apply EG")
@@ -622,10 +803,6 @@ while totMotif["totEND"] == 0:
         FI()
         print("-> apply FI")
         totMotif["totFI"] = totMotif["totFI"] + 1
-    if 'idGH' in str(res):
-        GH()
-        print("-> apply GH")
-        totMotif["totGH"] = totMotif["totGH"] + 1
     if 'idGI' in str(res):
         GI()
         print("-> apply GI")
@@ -643,37 +820,37 @@ while totMotif["totEND"] == 0:
 print("Valeurs finales des cases :", case)
 print("Nombre d'utilisations de AB : ", totMotif["totAB"])
 print("Nombre d'utilisations de AC : ", totMotif["totAC"])
-print("Nombre d'utilisations de AC : ", totMotif["totAD"])
-print("Nombre d'utilisations de AC : ", totMotif["totAE"])
-print("Nombre d'utilisations de AC : ", totMotif["totAF"])
-print("Nombre d'utilisations de AC : ", totMotif["totAG"])
-print("Nombre d'utilisations de AC : ", totMotif["totAH"])
-print("Nombre d'utilisations de AC : ", totMotif["totAI"])
-print("Nombre d'utilisations de AC : ", totMotif["totBC"])
-print("Nombre d'utilisations de AC : ", totMotif["totBD"])
-print("Nombre d'utilisations de AC : ", totMotif["totBE"])
-print("Nombre d'utilisations de AC : ", totMotif["totBF"])
-print("Nombre d'utilisations de AC : ", totMotif["totBG"])
-print("Nombre d'utilisations de AC : ", totMotif["totBH"])
-print("Nombre d'utilisations de AC : ", totMotif["totBI"])
-print("Nombre d'utilisations de AC : ", totMotif["totCD"])
-print("Nombre d'utilisations de AC : ", totMotif["totCE"])
-print("Nombre d'utilisations de AC : ", totMotif["totCF"])
-print("Nombre d'utilisations de AC : ", totMotif["totCG"])
-print("Nombre d'utilisations de AC : ", totMotif["totCH"])
-print("Nombre d'utilisations de AC : ", totMotif["totCI"])
-print("Nombre d'utilisations de AC : ", totMotif["totDE"])
-print("Nombre d'utilisations de AC : ", totMotif["totDF"])
-print("Nombre d'utilisations de AC : ", totMotif["totDG"])
-print("Nombre d'utilisations de AC : ", totMotif["totDH"])
-print("Nombre d'utilisations de AC : ", totMotif["totDI"])
-print("Nombre d'utilisations de AC : ", totMotif["totEF"])
-print("Nombre d'utilisations de AC : ", totMotif["totEG"])
-print("Nombre d'utilisations de AC : ", totMotif["totEH"])
-print("Nombre d'utilisations de AC : ", totMotif["totEI"])
-print("Nombre d'utilisations de AC : ", totMotif["totFG"])
-print("Nombre d'utilisations de AC : ", totMotif["totFH"])
-print("Nombre d'utilisations de AC : ", totMotif["totFI"])
-print("Nombre d'utilisations de AC : ", totMotif["totGH"])
-print("Nombre d'utilisations de AC : ", totMotif["totGI"])
-print("Nombre d'utilisations de AC : ", totMotif["totHI"])
+print("Nombre d'utilisations de AD : ", totMotif["totAD"])
+print("Nombre d'utilisations de AE : ", totMotif["totAE"])
+print("Nombre d'utilisations de AF : ", totMotif["totAF"])
+print("Nombre d'utilisations de AG : ", totMotif["totAG"])
+print("Nombre d'utilisations de AH : ", totMotif["totAH"])
+print("Nombre d'utilisations de AI : ", totMotif["totAI"])
+print("Nombre d'utilisations de BC : ", totMotif["totBC"])
+print("Nombre d'utilisations de BD : ", totMotif["totBD"])
+print("Nombre d'utilisations de BE : ", totMotif["totBE"])
+print("Nombre d'utilisations de BF : ", totMotif["totBF"])
+print("Nombre d'utilisations de BG : ", totMotif["totBG"])
+print("Nombre d'utilisations de BH : ", totMotif["totBH"])
+print("Nombre d'utilisations de BI : ", totMotif["totBI"])
+print("Nombre d'utilisations de CD : ", totMotif["totCD"])
+print("Nombre d'utilisations de CE : ", totMotif["totCE"])
+print("Nombre d'utilisations de CF : ", totMotif["totCF"])
+print("Nombre d'utilisations de CG : ", totMotif["totCG"])
+print("Nombre d'utilisations de CH : ", totMotif["totCH"])
+print("Nombre d'utilisations de CI : ", totMotif["totCI"])
+print("Nombre d'utilisations de DE : ", totMotif["totDE"])
+print("Nombre d'utilisations de DF : ", totMotif["totDF"])
+print("Nombre d'utilisations de DG : ", totMotif["totDG"])
+print("Nombre d'utilisations de DH : ", totMotif["totDH"])
+print("Nombre d'utilisations de DI : ", totMotif["totDI"])
+print("Nombre d'utilisations de EF : ", totMotif["totEF"])
+print("Nombre d'utilisations de EG : ", totMotif["totEG"])
+print("Nombre d'utilisations de EH : ", totMotif["totEH"])
+print("Nombre d'utilisations de EI : ", totMotif["totEI"])
+print("Nombre d'utilisations de FG : ", totMotif["totFG"])
+print("Nombre d'utilisations de FH : ", totMotif["totFH"])
+print("Nombre d'utilisations de FI : ", totMotif["totFI"])
+print("Nombre d'utilisations de GH : ", totMotif["totGH"])
+print("Nombre d'utilisations de GI : ", totMotif["totGI"])
+print("Nombre d'utilisations de HI : ", totMotif["totHI"])
