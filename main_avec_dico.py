@@ -1,3 +1,10 @@
+import turtle
+
+# Créer une instance de la tortue
+tortue = turtle.Turtle()
+tortue.speed(500)
+
+
 # Dictionnaire des cases
 case = {"a2": 0, "a3": 0, "a4": 0, "b1": 0, "b2": 0, "b3": 0, "b4": 0, "b5": 0, "c1": 0, "c2": 0, "c3": 0, "c4": 0, "c5": 0, "d1": 0, "d2": 0, "d3": 0, "d4": 0, "d5": 0, "e2": 0, "e3": 0, "e4": 0}
 
@@ -437,7 +444,7 @@ def rEND():
 
 
 # Objectif final
-objectif = {"oa2": 0, "oa3": 0, "oa4": 0, "ob1": 0, "ob2": 100, "ob3": 0, "ob4": 100, "ob5": 0, "oc1": 0, "oc2": 0, "oc3": 0, "oc4": 0, "oc5": 0, "od1": 0, "od2": 100, "od3": 100, "od4": 100, "od5": 0, "oe2": 0, "oe3": 0, "oe4": 0}
+objectif = {"oa2": 20, "oa3": 0, "oa4": 0, "ob1": 20, "ob2": 20, "ob3": 0, "ob4": 100, "ob5": 0, "oc1": 20, "oc2": 20, "oc3": 0, "oc4": 0, "oc5": 0, "od1": 20, "od2": 20, "od3": 20, "od4": 0, "od5": 0, "oe2": 20, "oe3": 20, "oe4": 20}
 
 # Indice de choix du motif
 dico_idM = {"idM": 0}
@@ -854,3 +861,401 @@ print("Nombre d'utilisations de FI : ", totMotif["totFI"])
 print("Nombre d'utilisations de GH : ", totMotif["totGH"])
 print("Nombre d'utilisations de GI : ", totMotif["totGI"])
 print("Nombre d'utilisations de HI : ", totMotif["totHI"])
+
+
+# Dessin des fils avec Turtle
+
+# Dessiner le cercle
+turtle.up()
+turtle.goto(0, -100)
+turtle.down()
+turtle.circle(100, 360)
+turtle.up()
+
+# Définir les positions des clous
+clous = {"A": 0, "B": 0, "C": 0, "D": 0, "E": 0, "F": 0, "G": 0, "H": 0, "I": 0}
+
+# Dessiner les clous
+
+#for cle, valeur in clous.items():
+#    turtle.goto(0, 0)
+#    turtle.fd(100)
+#    clous[valeur] = turtle.pos()
+#    print(turtle.pos())
+#    print(cle, " : ", valeur)
+#    turtle.down()
+#    turtle.fd(10)
+#    turtle.up()
+#    turtle.rt(40)
+#turtle.goto(0, 0
+
+turtle.goto(0, 0)
+turtle.lt(90)
+
+turtle.fd(100)
+clous["A"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["B"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["C"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["D"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["E"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["F"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["G"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["H"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+turtle.lt(40)
+turtle.fd(100)
+clous["I"] = turtle.pos()
+turtle.down()
+turtle.fd(10)
+turtle.up()
+turtle.goto(0, 0)
+
+print(clous)
+
+# Définir les traits de chaque motif élémentaire
+def tAB():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["B"])
+    turtle.up()
+def tAC():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["C"])
+    turtle.up()
+def tAD():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["D"])
+    turtle.up()
+def tAE():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["E"])
+    turtle.up()
+def tAF():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["F"])
+    turtle.up()
+def tAG():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["G"])
+    turtle.up()
+def tAH():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tAI():
+    turtle.goto(clous["A"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tBC():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["C"])
+    turtle.up()
+def tBD():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["D"])
+    turtle.up()
+def tBE():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["E"])
+    turtle.up()
+def tBF():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["F"])
+    turtle.up()
+def tBG():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["G"])
+    turtle.up()
+def tBH():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tBI():
+    turtle.goto(clous["B"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tCD():
+    turtle.goto(clous["C"])
+    turtle.down()
+    turtle.goto(clous["D"])
+    turtle.up()
+def tCE():
+    turtle.goto(clous["C"])
+    turtle.down()
+    turtle.goto(clous["E"])
+    turtle.up()
+def tCF():
+    turtle.goto(clous["C"])
+    turtle.down()
+    turtle.goto(clous["F"])
+    turtle.up()
+def tCG():
+    turtle.goto(clous["C"])
+    turtle.down()
+    turtle.goto(clous["G"])
+    turtle.up()
+def tCH():
+    turtle.goto(clous["C"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tCI():
+    turtle.goto(clous["C"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tDE():
+    turtle.goto(clous["D"])
+    turtle.down()
+    turtle.goto(clous["E"])
+    turtle.up()
+def tDF():
+    turtle.goto(clous["D"])
+    turtle.down()
+    turtle.goto(clous["F"])
+    turtle.up()
+def tDG():
+    turtle.goto(clous["D"])
+    turtle.down()
+    turtle.goto(clous["G"])
+    turtle.up()
+def tDH():
+    turtle.goto(clous["D"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tDI():
+    turtle.goto(clous["D"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tEF():
+    turtle.goto(clous["E"])
+    turtle.down()
+    turtle.goto(clous["F"])
+    turtle.up()
+def tEG():
+    turtle.goto(clous["E"])
+    turtle.down()
+    turtle.goto(clous["G"])
+    turtle.up()
+def tEH():
+    turtle.goto(clous["E"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tEI():
+    turtle.goto(clous["E"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tFG():
+    turtle.goto(clous["F"])
+    turtle.down()
+    turtle.goto(clous["G"])
+    turtle.up()
+def tFH():
+    turtle.goto(clous["F"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tFI():
+    turtle.goto(clous["F"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tGH():
+    turtle.goto(clous["G"])
+    turtle.down()
+    turtle.goto(clous["H"])
+    turtle.up()
+def tGI():
+    turtle.goto(clous["G"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+def tHI():
+    turtle.goto(clous["H"])
+    turtle.down()
+    turtle.goto(clous["I"])
+    turtle.up()
+
+
+for i in range(totMotif["totAB"]):
+    turtle.pensize(i + 1)
+    tAB()
+for i in range(totMotif["totAC"]):
+    turtle.pensize(i + 1)
+    tAC()
+for i in range(totMotif["totAD"]):
+    turtle.pensize(i + 1)
+    tAD()
+for i in range(totMotif["totAE"]):
+    turtle.pensize(i + 1)
+    tAE()
+for i in range(totMotif["totAF"]):
+    turtle.pensize(i + 1)
+    tAF()
+for i in range(totMotif["totAG"]):
+    turtle.pensize(i + 1)
+    tAG()
+for i in range(totMotif["totAH"]):
+    turtle.pensize(i + 1)
+    tAH()
+for i in range(totMotif["totAI"]):
+    turtle.pensize(i + 1)
+    tAI()
+for i in range(totMotif["totBC"]):
+    turtle.pensize(i + 1)
+    tBC()
+for i in range(totMotif["totBD"]):
+    turtle.pensize(i + 1)
+    tBD()
+for i in range(totMotif["totBE"]):
+    turtle.pensize(i + 1)
+    tBE()
+for i in range(totMotif["totBF"]):
+    turtle.pensize(i + 1)
+    tBF()
+for i in range(totMotif["totBG"]):
+    turtle.pensize(i + 1)
+    tBG()
+for i in range(totMotif["totBH"]):
+    turtle.pensize(i + 1)
+    tBH()
+for i in range(totMotif["totBI"]):
+    turtle.pensize(i + 1)
+    tBI()
+for i in range(totMotif["totCD"]):
+    turtle.pensize(i + 1)
+    tCD()
+for i in range(totMotif["totCE"]):
+    turtle.pensize(i + 1)
+    tCE()
+for i in range(totMotif["totCF"]):
+    turtle.pensize(i + 1)
+    tCF()
+for i in range(totMotif["totCG"]):
+    turtle.pensize(i + 1)
+    tCG()
+for i in range(totMotif["totCH"]):
+    turtle.pensize(i + 1)
+    tCH()
+for i in range(totMotif["totCI"]):
+    turtle.pensize(i + 1)
+    tCI()
+for i in range(totMotif["totDE"]):
+    turtle.pensize(i + 1)
+    tDE()
+for i in range(totMotif["totDF"]):
+    turtle.pensize(i + 1)
+    tDF()
+for i in range(totMotif["totDG"]):
+    turtle.pensize(i + 1)
+    tDG()
+for i in range(totMotif["totDH"]):
+    turtle.pensize(i + 1)
+    tDH()
+for i in range(totMotif["totDI"]):
+    turtle.pensize(i + 1)
+    tDI()
+for i in range(totMotif["totEF"]):
+    turtle.pensize(i + 1)
+    tEF()
+for i in range(totMotif["totEG"]):
+    turtle.pensize(i + 1)
+    tEG()
+for i in range(totMotif["totEH"]):
+    turtle.pensize(i + 1)
+    tEH()
+for i in range(totMotif["totEI"]):
+    turtle.pensize(i + 1)
+    tEI()
+for i in range(totMotif["totFG"]):
+    turtle.pensize(i + 1)
+    tFG()
+for i in range(totMotif["totFH"]):
+    turtle.pensize(i + 1)
+    tFH()
+for i in range(totMotif["totFI"]):
+    turtle.pensize(i + 1)
+    tFI()
+for i in range(totMotif["totGH"]):
+    turtle.pensize(i + 1)
+    tGH()
+for i in range(totMotif["totGI"]):
+    turtle.pensize(i + 1)
+    tGI()
+for i in range(totMotif["totHI"]):
+    turtle.pensize(i + 1)
+    tHI()
+
+# Fermer la fenêtre lors d'un clic
+turtle.exitonclick()
