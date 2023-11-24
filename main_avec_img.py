@@ -2,13 +2,11 @@ import turtle
 
 # Créer une instance de la tortue
 tortue = turtle.Turtle()
-tortue.speed(500)
+tortue.speed(0)
 
 
 # Dictionnaire des cases
 case = {"a2": 0, "a3": 0, "a4": 0, "b1": 0, "b2": 0, "b3": 0, "b4": 0, "b5": 0, "c1": 0, "c2": 0, "c3": 0, "c4": 0, "c5": 0, "d1": 0, "d2": 0, "d3": 0, "d4": 0, "d5": 0, "e2": 0, "e3": 0, "e4": 0}
-
-
 
 
 
@@ -448,7 +446,7 @@ def rEND():
 
 
 # Objectif final
-objectif = {"oa2": 20, "oa3": 0, "oa4": 0, "ob1": 20, "ob2": 20, "ob3": 0, "ob4": 100, "ob5": 0, "oc1": 20, "oc2": 20, "oc3": 0, "oc4": 0, "oc5": 0, "od1": 20, "od2": 20, "od3": 20, "od4": 0, "od5": 0, "oe2": 20, "oe3": 20, "oe4": 20}
+objectif = {"oa2": 0, "oa3": 0, "oa4": 0, "ob1": 0, "ob2": 0, "ob3": 0, "ob4": 0, "ob5": 0, "oc1": 0, "oc2": 0, "oc3": 0, "oc4": 0, "oc5": 0, "od1": 0, "od2": 0, "od3": 0, "od4": 0, "od5": 0, "oe2": 0, "oe3": 0, "oe4": 0}
 
 
 
@@ -456,9 +454,9 @@ objectif = {"oa2": 20, "oa3": 0, "oa4": 0, "ob1": 20, "ob2": 20, "ob3": 0, "ob4"
 
 from PIL import Image
 
-image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_lune.png")
+image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_a.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
-image.show()
+#   image.show()
 
 width, height = image.size
 
@@ -466,10 +464,70 @@ for x in range(width):
     for y in range(height):
         pixel = (255 - image.getpixel((x, y))) // 10
         print(pixel)
-        if x == 2 ():
-            if y == 1 ():
+        if x == 2:
+            if y == 1:
                 objectif["oa2"] = pixel
-
+        if x == 3:
+            if y == 1:
+                objectif["oa3"] = pixel
+        if x == 4:
+            if y == 1:
+                objectif["oa4"] = pixel
+        if x == 1:
+            if y == 2:
+                objectif["ob1"] = pixel
+        if x == 2:
+            if y == 2:
+                objectif["ob2"] = pixel
+        if x == 3:
+            if y == 2:
+                objectif["ob3"] = pixel
+        if x == 4:
+            if y == 2:
+                objectif["ob4"] = pixel
+        if x == 5:
+            if y == 2:
+                objectif["ob5"] = pixel
+        if x == 1:
+            if y == 3:
+                objectif["oc1"] = pixel
+        if x == 2:
+            if y == 3:
+                objectif["oc2"] = pixel
+        if x == 3:
+            if y == 3:
+                objectif["oc3"] = pixel
+        if x == 4:
+            if y == 3:
+                objectif["oc4"] = pixel
+        if x == 5:
+            if y == 3:
+                objectif["oc5"] = pixel
+        if x == 1:
+            if y == 4:
+                objectif["od1"] = pixel
+        if x == 2:
+            if y == 4:
+                objectif["od2"] = pixel
+        if x == 3:
+            if y == 4:
+                objectif["od3"] = pixel
+        if x == 4:
+            if y == 4:
+                objectif["od4"] = pixel
+        if x == 5:
+            if y == 4:
+                objectif["od5"] = pixel
+        if x == 2:
+            if y == 5:
+                objectif["oe2"] = pixel
+        if x == 3:
+            if y == 5:
+                objectif["oe3"] = pixel
+        if x == 4:
+            if y == 5:
+                objectif["oe4"] = pixel
+        
 
 
 
@@ -691,7 +749,7 @@ def idM_par_motif():
     END()
     # print("idM pour END :")
     idMotif()
-    idM_motif["idEND"] = dico_idM["idM"]
+    idM_motif["idEND"] = dico_idM["idM"]    # optionnel :  + 1
     rEND()
     print("idEND : ", idM_motif["idEND"])
 
