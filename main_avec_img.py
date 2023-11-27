@@ -454,7 +454,7 @@ objectif = {"oa2": 0, "oa3": 0, "oa4": 0, "ob1": 0, "ob2": 0, "ob3": 0, "ob4": 0
 
 from PIL import Image
 
-image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_a.png")
+image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_lune.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
@@ -464,71 +464,70 @@ for x in range(width):
     for y in range(height):
         pixel = (255 - image.getpixel((x, y))) // 10
         print(pixel)
-        if x == 2:
-            if y == 1:
+        if x == 1:
+            if y == 0:
                 objectif["oa2"] = pixel
-        if x == 3:
-            if y == 1:
+        if x == 2:
+            if y == 0:
                 objectif["oa3"] = pixel
+        if x == 3:
+            if y == 0:
+                objectif["oa4"] = pixel
+        if x == 0:
+            if y == 1:
+                objectif["ob1"] = pixel
+        if x == 1:
+            if y == 1:
+                objectif["ob2"] = pixel
+        if x == 2:
+            if y == 1:
+                objectif["ob3"] = pixel
+        if x == 3:
+            if y == 1:
+                objectif["ob4"] = pixel
         if x == 4:
             if y == 1:
-                objectif["oa4"] = pixel
-        if x == 1:
-            if y == 2:
-                objectif["ob1"] = pixel
-        if x == 2:
-            if y == 2:
-                objectif["ob2"] = pixel
-        if x == 3:
-            if y == 2:
-                objectif["ob3"] = pixel
-        if x == 4:
-            if y == 2:
-                objectif["ob4"] = pixel
-        if x == 5:
-            if y == 2:
                 objectif["ob5"] = pixel
-        if x == 1:
-            if y == 3:
+        if x == 0:
+            if y == 2:
                 objectif["oc1"] = pixel
+        if x == 1:
+            if y == 2:
+                objectif["oc2"] = pixel
+        if x == 2:
+            if y == 2:
+                objectif["oc3"] = pixel
+        if x == 3:
+            if y == 2:
+                objectif["oc4"] = pixel
+        if x == 4:
+            if y == 2:
+                objectif["oc5"] = pixel
+        if x == 0:
+            if y == 3:
+                objectif["od1"] = pixel
+        if x == 1:
+            if y == 3:
+                objectif["od2"] = pixel
         if x == 2:
             if y == 3:
-                objectif["oc2"] = pixel
+                objectif["od3"] = pixel
         if x == 3:
             if y == 3:
-                objectif["oc3"] = pixel
+                objectif["od4"] = pixel
         if x == 4:
             if y == 3:
-                objectif["oc4"] = pixel
-        if x == 5:
-            if y == 3:
-                objectif["oc5"] = pixel
+                objectif["od5"] = pixel
         if x == 1:
             if y == 4:
-                objectif["od1"] = pixel
-        if x == 2:
-            if y == 4:
-                objectif["od2"] = pixel
-        if x == 3:
-            if y == 4:
-                objectif["od3"] = pixel
-        if x == 4:
-            if y == 4:
-                objectif["od4"] = pixel
-        if x == 5:
-            if y == 4:
-                objectif["od5"] = pixel
-        if x == 2:
-            if y == 5:
                 objectif["oe2"] = pixel
-        if x == 3:
-            if y == 5:
+        if x == 2:
+            if y == 4:
                 objectif["oe3"] = pixel
-        if x == 4:
-            if y == 5:
+        if x == 3:
+            if y == 4:
                 objectif["oe4"] = pixel
         
-
 
 
 # Indice de choix du motif
@@ -749,7 +748,7 @@ def idM_par_motif():
     END()
     # print("idM pour END :")
     idMotif()
-    idM_motif["idEND"] = dico_idM["idM"]    # optionnel :  + 1
+    idM_motif["idEND"] = dico_idM["idM"]   # optionnel :  + 1
     rEND()
     print("idEND : ", idM_motif["idEND"])
 
@@ -1344,3 +1343,6 @@ for i in range(totMotif["totHI"]):
 
 # Fermer la fenêtre lors d'un clic
 turtle.exitonclick()
+
+print("objectif :", objectif)
+print("case :", case)
