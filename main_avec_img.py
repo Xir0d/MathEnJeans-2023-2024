@@ -454,7 +454,7 @@ objectif = {"oa2": 0, "oa3": 0, "oa4": 0, "ob1": 0, "ob2": 0, "ob3": 0, "ob4": 0
 
 from PIL import Image
 
-image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_a.png")
+image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_lune.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
