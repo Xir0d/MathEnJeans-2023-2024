@@ -81,4 +81,13 @@ for i in range(clous):
             def motif(i,j):
                 for a in range(width):
                     for b in range(height):
-                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1))   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1)) and (((2 / height) - 1) * b) < droite(a - 1) < (((2 / height) - 1) * (b + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            case[a,b] = case[a,b] + 1
+            def r_motif(i,j):
+                for a in range(width):
+                    for b in range(height):
+                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1)) and (((2 / height) - 1) * b) < droite(a - 1) < (((2 / height) - 1) * (b + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            case[a,b] = case[a,b] - 1
+
+motif(2,5)
+print(case)
