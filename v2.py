@@ -65,29 +65,33 @@ print("s : ", s)
 
 
 # Définir les motifs élémentaires
-for i in range(clous):
-    for j in range(clous):
-        if j > i:
-            # Définir les équations de droites
-            if coorclous['x', i] < coorclous['x', j]:
-                coef_droite = (coorclous['y',j] - coorclous['y',i]) / (coorclous['x',j] - coorclous['x',i])
-                def droite(X):
-                    coef_droite * X + coorclous['y',i] - (coef_droite * coorclous['x',i])
-            if coorclous['x', j] < coorclous['x', i]:
-                coef_droite = (coorclous['y',i] - coorclous['y',j]) / (coorclous['x',i] - coorclous['x',j])
-                def droite(X):
-                    coef_droite * X + coorclous['y',i] - (coef_droite * coorclous['x',i])
-            print(droite(2))
-            def motif(i,j):
-                for a in range(width):
-                    for b in range(height):
-                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1)) and (((2 / height) - 1) * b) < droite(a - 1) < (((2 / height) - 1) * (b + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
-                            case[a,b] = case[a,b] + 1
-            def r_motif(i,j):
-                for a in range(width):
-                    for b in range(height):
-                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1)) and (((2 / height) - 1) * b) < droite(a - 1) < (((2 / height) - 1) * (b + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
-                            case[a,b] = case[a,b] - 1
+def motif(i,j):
+    # Définir les équations de droites
+    coef_droite = (coorclous['y',j] - coorclous['y',i]) / (coorclous['x',j] - coorclous['x',i])
+    print("coef_droite=", coef_droite)
+    for m in range(width):
+        for n in range(height):
+            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
 
-motif(2,5)
+#            print(droite(2))
+#            def motif(i,j):
+#                for a in range(width):
+#                    for b in range(height):
+#                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1)) and (((2 / height) - 1) * b) < droite(a - 1) < (((2 / height) - 1) * (b + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+#                            case[a,b] = case[a,b] + 1
+#            def r_motif(i,j):
+#                for a in range(width):
+#                    for b in range(height):
+#                        if (((2 / width) - 1) * a) < droite(a - 1) < (((2 / width) - 1) * (a + 1)) and (((2 / height) - 1) * b) < droite(a - 1) < (((2 / height) - 1) * (b + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+#                            case[a,b] = case[a,b] - 1
+
+
+
+#motif(2,5)
 print(case)
+
+
+# Pour autant de loop que de motifs
+#for i in range(clous):
+#    for j in range(clous):
+#        if j > i:
