@@ -7,7 +7,7 @@
 
 import math
 
-clous = 9
+clous = input('Nombre de Clous : ')
 
 
 # Créer dico objectif en fonction de l'image
@@ -15,7 +15,7 @@ objectif = {}
 
 from PIL import Image
 
-image = Image.open("U:\gaetan.daviet\Mes documents\Documents\MathEnJean\img_lune.png")
+image = Image.open("./test.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
@@ -72,7 +72,7 @@ def motif(i,j):
     for m in range(width):
         for n in range(height):
             if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
-
+                case[m,n] = case[m,n] + 1
 #            print(droite(2))
 #            def motif(i,j):
 #                for a in range(width):
@@ -88,8 +88,7 @@ def motif(i,j):
 
 
 #motif(2,5)
-print(case)
-
+#print(case)
 
 # Pour autant de loop que de motifs
 #for i in range(clous):

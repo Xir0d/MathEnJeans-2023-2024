@@ -129,11 +129,6 @@ def CH():
     case["b3"] = case["b3"] + 1
     case["b4"] = case["b4"] + 1
     case["b5"] = case["b5"] + 1
-    case["c1"] = case["c1"] + 1
-    case["c2"] = case["c2"] + 1
-    case["c3"] = case["c3"] + 1
-    case["c4"] = case["c4"] + 1
-    case["c5"] = case["c5"] + 1
 
 def CI():
     case["a3"] = case["a3"] + 1
@@ -347,11 +342,6 @@ def rCH():
     case["b3"] = case["b3"] - 1
     case["b4"] = case["b4"] - 1
     case["b5"] = case["b5"] - 1
-    case["c1"] = case["c1"] - 1
-    case["c2"] = case["c2"] - 1
-    case["c3"] = case["c3"] - 1
-    case["c4"] = case["c4"] - 1
-    case["c5"] = case["c5"] - 1
 
 def rCI():
     case["a3"] = case["a3"] - 1
