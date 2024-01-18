@@ -895,8 +895,9 @@ while totMotif["totEND"] == 0:
     if 'idEND' in str(res):
         print("-> stop")
         totMotif["totEND"] = totMotif["totEND"] + 1
-        
-    
+
+
+
 
 print("Valeurs finales des cases :", case)
 print("Nombre d'utilisations de AB : ", totMotif["totAB"])
@@ -1221,114 +1222,79 @@ def tHI():
     turtle.goto(clous["I"])
     turtle.up()
 
-
-for i in range(totMotif["totAB"]):
-    turtle.pensize(i + 1)
+if totMotif["totAB"] != "0":
+    turtle.pensize(totMotif["totAB"])
     tAB()
-for i in range(totMotif["totAC"]):
-    turtle.pensize(i + 1)
+if totMotif["totAC"] != "0":
+    turtle.pensize(totMotif["totAC"])
     tAC()
-for i in range(totMotif["totAD"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totAD"])
     tAD()
-for i in range(totMotif["totAE"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totAE"])
     tAE()
-for i in range(totMotif["totAF"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totAF"])
     tAF()
-for i in range(totMotif["totAG"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totAG"])
     tAG()
-for i in range(totMotif["totAH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totAH"])
     tAH()
-for i in range(totMotif["totAI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totAI"])
     tAI()
-for i in range(totMotif["totBC"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBC"])
     tBC()
-for i in range(totMotif["totBD"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBD"])
     tBD()
-for i in range(totMotif["totBE"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBE"])
     tBE()
-for i in range(totMotif["totBF"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBF"])
     tBF()
-for i in range(totMotif["totBG"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBG"])
     tBG()
-for i in range(totMotif["totBH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBH"])
     tBH()
-for i in range(totMotif["totBI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totBI"])
     tBI()
-for i in range(totMotif["totCD"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totCD"])
     tCD()
-for i in range(totMotif["totCE"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totCE"])
     tCE()
-for i in range(totMotif["totCF"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totCF"])
     tCF()
-for i in range(totMotif["totCG"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totCG"])
     tCG()
-for i in range(totMotif["totCH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totCH"])
     tCH()
-for i in range(totMotif["totCI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totCI"])
     tCI()
-for i in range(totMotif["totDE"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totDE"])
     tDE()
-for i in range(totMotif["totDF"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totDF"])
     tDF()
-for i in range(totMotif["totDG"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totDG"])
     tDG()
-for i in range(totMotif["totDH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totDH"])
     tDH()
-for i in range(totMotif["totDI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totDI"])
     tDI()
-for i in range(totMotif["totEF"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totEF"])
     tEF()
-for i in range(totMotif["totEG"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totEG"])
     tEG()
-for i in range(totMotif["totEH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totEH"])
     tEH()
-for i in range(totMotif["totEI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totEI"])
     tEI()
-for i in range(totMotif["totFG"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totFG"])
     tFG()
-for i in range(totMotif["totFH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totFH"])
     tFH()
-for i in range(totMotif["totFI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totFI"])
     tFI()
-for i in range(totMotif["totGH"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totGH"])
     tGH()
-for i in range(totMotif["totGI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totGI"])
     tGI()
-for i in range(totMotif["totHI"]):
-    turtle.pensize(i + 1)
+    turtle.pensize(totMotif["totHI"])
     tHI()
 
 # Fermer la fenêtre lors d'un clic
