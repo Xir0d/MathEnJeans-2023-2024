@@ -8,8 +8,6 @@ tortue.speed(0)
 # Dictionnaire des cases
 case = {"a2": 0, "a3": 0, "a4": 0, "b1": 0, "b2": 0, "b3": 0, "b4": 0, "b5": 0, "c1": 0, "c2": 0, "c3": 0, "c4": 0, "c5": 0, "d1": 0, "d2": 0, "d3": 0, "d4": 0, "d5": 0, "e2": 0, "e3": 0, "e4": 0}
 
-
-
 # Motifs élémentaires
 def AB():
     case["a2"] = case["a2"] + 1
@@ -1222,78 +1220,113 @@ def tHI():
     turtle.goto(clous["I"])
     turtle.up()
 
-if totMotif["totAB"] != "0":
+if totMotif["totAB"] != 0:
     turtle.pensize(totMotif["totAB"])
     tAB()
-if totMotif["totAC"] != "0":
+if totMotif["totAC"] != 0:
     turtle.pensize(totMotif["totAC"])
     tAC()
+if totMotif["totAD"] != 0:
     turtle.pensize(totMotif["totAD"])
     tAD()
+if totMotif["totAE"] != 0:
     turtle.pensize(totMotif["totAE"])
     tAE()
+if totMotif["totAF"] != 0:
+    print("ta gueule daniel")
     turtle.pensize(totMotif["totAF"])
     tAF()
+if totMotif["totAG"] != 0:
     turtle.pensize(totMotif["totAG"])
     tAG()
+if totMotif["totAH"] != 0:
     turtle.pensize(totMotif["totAH"])
     tAH()
+if totMotif["totAI"] != 0:
     turtle.pensize(totMotif["totAI"])
     tAI()
+if totMotif["totBC"] != 0:
     turtle.pensize(totMotif["totBC"])
     tBC()
+if totMotif["totBD"] != 0:
     turtle.pensize(totMotif["totBD"])
     tBD()
+if totMotif["totBE"] != 0:
     turtle.pensize(totMotif["totBE"])
     tBE()
+if totMotif["totBF"] != 0:
     turtle.pensize(totMotif["totBF"])
     tBF()
+if totMotif["totBG"] != 0:
     turtle.pensize(totMotif["totBG"])
     tBG()
+if totMotif["totBH"] != 0:
     turtle.pensize(totMotif["totBH"])
     tBH()
+if totMotif["totBI"] != 0:
     turtle.pensize(totMotif["totBI"])
     tBI()
+if totMotif["totCD"] != 0:
     turtle.pensize(totMotif["totCD"])
     tCD()
+if totMotif["totCE"] != 0:
     turtle.pensize(totMotif["totCE"])
     tCE()
+if totMotif["totCF"] != 0:
     turtle.pensize(totMotif["totCF"])
     tCF()
+if totMotif["totCG"] != 0:
     turtle.pensize(totMotif["totCG"])
     tCG()
+if totMotif["totCH"] != 0:
     turtle.pensize(totMotif["totCH"])
     tCH()
+if totMotif["totCI"] != 0:
     turtle.pensize(totMotif["totCI"])
     tCI()
+if totMotif["totDE"] != 0:
     turtle.pensize(totMotif["totDE"])
     tDE()
+if totMotif["totDF"] != 0:
     turtle.pensize(totMotif["totDF"])
     tDF()
+if totMotif["totDG"] != 0:
     turtle.pensize(totMotif["totDG"])
     tDG()
+if totMotif["totDH"] != 0:
     turtle.pensize(totMotif["totDH"])
     tDH()
+if totMotif["totDI"] != 0:
     turtle.pensize(totMotif["totDI"])
     tDI()
+if totMotif["totEF"] != 0:
     turtle.pensize(totMotif["totEF"])
     tEF()
+if totMotif["totEG"] != 0:
     turtle.pensize(totMotif["totEG"])
     tEG()
+if totMotif["totEH"] != 0:
     turtle.pensize(totMotif["totEH"])
     tEH()
+if totMotif["totEI"] != 0:
     turtle.pensize(totMotif["totEI"])
     tEI()
+if totMotif["totFG"] != 0:
     turtle.pensize(totMotif["totFG"])
     tFG()
+if totMotif["totFH"] != 0:
     turtle.pensize(totMotif["totFH"])
     tFH()
+if totMotif["totFI"] != 0:
     turtle.pensize(totMotif["totFI"])
     tFI()
+if totMotif["totGH"] != 0:
     turtle.pensize(totMotif["totGH"])
     tGH()
+if totMotif["totGI"] != 0:
     turtle.pensize(totMotif["totGI"])
     tGI()
+if totMotif["totHI"] != 0:
     turtle.pensize(totMotif["totHI"])
     tHI()
 
