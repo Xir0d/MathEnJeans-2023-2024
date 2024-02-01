@@ -46,7 +46,7 @@ print("objectif : ", objectif)
 
 # Coordonnées des clous
 angle = 360 / clous
-math.radians(angle)
+angle = math.radians(angle)
 
 coorclous = {}
 
@@ -69,46 +69,69 @@ print("s : ", s)
 
 # Définir les motifs élémentaires
 def motif(i,j):
+    print("coorclous['x',i]", coorclous['x',i])
+    print("coorclous['x',j]", coorclous['x',j])
+    print("coorclous['y',i]", coorclous['y',i])
+    print("coorclous['y',j]", coorclous['y',j])
     # Définir les équations de droites
     coef_droite = (coorclous['y',j] - coorclous['y',i]) / (coorclous['x',j] - coorclous['x',i])
     print("coef_droite=", coef_droite)
     for m in range(width):
         for n in range(height):
+            print("m=", m, " n=", n)
             if coorclous['x',i] < coorclous['x',j]:
                 print("coorclous['x',i] < coorclous['x',j]")
                 if coorclous['x',i] < (((2 / width) - 1) * m + 0.5) < coorclous['x',j]:
+                    print("georges sand")
                     if coorclous['y',i] < coorclous['y',j]:
+                        print("georges 2")
+                        print("coorclous['y',i] =", coorclous['y',i])
+                        print("(((2 / width) - 1) * n + 0.5)", (((2 / width) - 1) * n + 0.5))
+                        print("coorclous['y',j]", coorclous['y',j])
                         if coorclous['y',i] < (((2 / width) - 1) * n + 0.5) < coorclous['y',j]:
+                            print("georges 3")
                             if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
-            if coorclous['x',i] > coorclous['x',j]:
-                if coorclous['x',i] > (((2 / width) - 1) * m + 0.5) > coorclous['x',j]:
-                    if coorclous['y',i] < coorclous['y',j]:
-                        if coorclous['y',i] < (((2 / width) - 1) * n + 0.5) < coorclous['y',j]:
-                            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
-                                case[m,n] = case[m,n] + 1
-                                print("case[m,n] = case[m,n] + 1")
-            if coorclous['x',i] < coorclous['x',j]:
-                if coorclous['x',i] < (((2 / width) - 1) * m + 0.5) < coorclous['x',j]:
+                elif coorclous['x',i] < (((2 / width) - 1) * m + 0.5) < coorclous['x',j]:
                     if coorclous['y',i] > coorclous['y',j]:
                         if coorclous['y',i] > (((2 / width) - 1) * n + 0.5) > coorclous['y',j]:
                             if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
-            if coorclous['x',i] > coorclous['x',j]:
+            elif coorclous['x',i] > coorclous['x',j]:
                 if coorclous['x',i] > (((2 / width) - 1) * m + 0.5) > coorclous['x',j]:
-                    if coorclous['y',i] < coorclous['y',j]:
+                    print("georges sand")
+                    if coorclous['y',i] > coorclous['y',j]:
+                        print("georges 2")
                         if coorclous['y',i] > (((2 / width) - 1) * n + 0.5) > coorclous['y',j]:
+                            print("georges 3")
+                            print("\n Test :")
+                            print((((2 / width) - 1) * m)"", (((2 / width) - 1) * m))
+                            print("", )
+                            print("", )
+                            print("", )
+                            print("", )
+                            print("", )
+                            print("\n")
+                            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                                case[m,n] = case[m,n] + 1
+                                print("case[m,n] = case[m,n] + 1")
+                elif coorclous['x',i] > (((2 / width) - 1) * m + 0.5) > coorclous['x',j]:
+                    print("ageorges sand")
+                    if coorclous['y',i] < coorclous['y',j]:
+                        print("ageorges 2")
+                        if coorclous['y',i] < (((2 / width) - 1) * n + 0.5) < coorclous['y',j]:
+                            print("ageorges 3")
                             if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
 
 
 
-
 motif(2,5)
 print("case = ", case)
+
 
 # Pour autant de loop que de motifs
 #for i in range(clous):
