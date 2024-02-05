@@ -1,5 +1,28 @@
 import turtle
 
+# Demande des Variables nécessaires au programme
+largeurDeDivision = int(input('Diviser le nombre de motifs par :'))
+nbMotif1 = int(input('[1] Motif :'))
+nbMotif2 = int(input('[2] Motif :'))
+nbMotif3 = int(input('[3] Motif :'))
+nbMotif4 = int(input('[4] Motif :'))
+nbMotif5 = int(input('[5] Motif :'))
+nbMotif6 = int(input('[6] Motif :'))
+nbMotif7 = int(input('[7] Motif :'))
+nbMotif8 = int(input('[8] Motif :'))
+nbMotif9 = int(input('[9] Motif :'))
+nbMotif10 = int(input('[10] Motif :'))
+nbMotif11 = int(input('[11] Motif :'))
+nbMotif12 = int(input('[12] Motif :'))
+nbMotif13 = int(input('[13] Motif :'))
+nbMotif14 = int(input('[14] Motif :'))
+nbMotif15 = int(input('[15] Motif :'))
+nbMotif16 = int(input('[16] Motif :'))
+nbMotif17 = int(input('[17] Motif :'))
+nbMotif18 = int(input('[18] Motif :'))
+
+
+
 # Créer une instance de la tortue
 tortue = turtle.Turtle()
 tortue.speed(500)
@@ -822,40 +845,42 @@ while totMotif["totEND"] == 0:
         print("-> stop")
         totMotif["totEND"] = totMotif["totEND"] + 1
         
-for i in range(1891):     
+for i in range(nbMotif1):     
     totMotif["totCH"] = totMotif["totCH"] + 1
-for i in range(1417):     
+for i in range(nbMotif2):     
     totMotif["totCG"] = totMotif["totCG"] + 1
-for i in range(1234):     
+for i in range(nbMotif3):     
     totMotif["totDG"] = totMotif["totDG"] + 1
-for i in range(811):     
+for i in range(nbMotif4):     
     totMotif["totDH"] = totMotif["totDH"] + 1
-for i in range(952):     
+for i in range(nbMotif5):     
     totMotif["totCI"] = totMotif["totCI"] + 1
-for i in range(1216):     
+for i in range(nbMotif6):     
     totMotif["totEI"] = totMotif["totEI"] + 1
-for i in range(819):     
+for i in range(nbMotif7):     
     totMotif["totDI"] = totMotif["totDI"] + 1
-for i in range(846):     
+for i in range(nbMotif8):     
     totMotif["totBF"] = totMotif["totBF"] + 1
-for i in range(559):     
+for i in range(nbMotif9):     
     totMotif["totBG"] = totMotif["totBG"] + 1
-for i in range(1129):     
+for i in range(nbMotif10):     
     totMotif["totAD"] = totMotif["totAD"] + 1
-for i in range(1451):     
+for i in range(nbMotif11):     
     totMotif["totAG"] = totMotif["totAG"] + 1
-for i in range(1058):     
+for i in range(nbMotif12):     
     totMotif["totAF"] = totMotif["totAF"] + 1
-for i in range(379):     
+for i in range(nbMotif13):     
     totMotif["totBE"] = totMotif["totBE"] + 1
-for i in range(1836):     
+for i in range(nbMotif14):     
     totMotif["totAE"] = totMotif["totAE"] + 1
-for i in range(1365):     
+for i in range(nbMotif15):     
     totMotif["totCF"] = totMotif["totCF"] + 1
-for i in range(697):     
+for i in range(nbMotif16):     
     totMotif["totEH"] = totMotif["totEH"] + 1
-for i in range(1331):     
+for i in range(nbMotif17):     
     totMotif["totFI"] = totMotif["totFI"] + 1
+for i in range(nbMotif18):     
+    totMotif["totAH"] = totMotif["totAH"] + 1
 
 print("Valeurs finales des cases :", case)
 print("Nombre d'utilisations de AB : ", totMotif["totAB"])
@@ -1181,113 +1206,113 @@ def tHI():
     turtle.up()
 
 if totMotif["totAB"] != 0:
-    turtle.pensize(totMotif["totAB"]/100)
+    turtle.pensize(totMotif["totAB"]/largeurDeDivision)
     tAB()
 if totMotif["totAC"] != 0:
-    turtle.pensize(totMotif["totAC"]/100)
+    turtle.pensize(totMotif["totAC"]/largeurDeDivision)
     tAC()
 if totMotif["totAD"] != 0:
-    turtle.pensize(totMotif["totAD"]/100)
+    turtle.pensize(totMotif["totAD"]/largeurDeDivision)
     tAD()
 if totMotif["totAE"] != 0:
-    turtle.pensize(totMotif["totAE"]/100)
+    turtle.pensize(totMotif["totAE"]/largeurDeDivision)
     tAE()
 if totMotif["totAF"] != 0:
     print("ta gueule daniel")
-    turtle.pensize(totMotif["totAF"]/100)
+    turtle.pensize(totMotif["totAF"]/largeurDeDivision)
     tAF()
 if totMotif["totAG"] != 0:
-    turtle.pensize(totMotif["totAG"]/100)
+    turtle.pensize(totMotif["totAG"]/largeurDeDivision)
     tAG()
 if totMotif["totAH"] != 0:
-    turtle.pensize(totMotif["totAH"]/100)
+    turtle.pensize(totMotif["totAH"]/largeurDeDivision)
     tAH()
 if totMotif["totAI"] != 0:
-    turtle.pensize(totMotif["totAI"]/100)
+    turtle.pensize(totMotif["totAI"]/largeurDeDivision)
     tAI()
 if totMotif["totBC"] != 0:
-    turtle.pensize(totMotif["totBC"]/100)
+    turtle.pensize(totMotif["totBC"]/largeurDeDivision)
     tBC()
 if totMotif["totBD"] != 0:
-    turtle.pensize(totMotif["totBD"]/100)
+    turtle.pensize(totMotif["totBD"]/largeurDeDivision)
     tBD()
 if totMotif["totBE"] != 0:
-    turtle.pensize(totMotif["totBE"]/100)
+    turtle.pensize(totMotif["totBE"]/largeurDeDivision)
     tBE()
 if totMotif["totBF"] != 0:
-    turtle.pensize(totMotif["totBF"]/100)
+    turtle.pensize(totMotif["totBF"]/largeurDeDivision)
     tBF()
 if totMotif["totBG"] != 0:
-    turtle.pensize(totMotif["totBG"]/100)
+    turtle.pensize(totMotif["totBG"]/largeurDeDivision)
     tBG()
 if totMotif["totBH"] != 0:
-    turtle.pensize(totMotif["totBH"]/100)
+    turtle.pensize(totMotif["totBH"]/largeurDeDivision)
     tBH()
 if totMotif["totBI"] != 0:
-    turtle.pensize(totMotif["totBI"]/100)
+    turtle.pensize(totMotif["totBI"]/largeurDeDivision)
     tBI()
 if totMotif["totCD"] != 0:
-    turtle.pensize(totMotif["totCD"]/100)
+    turtle.pensize(totMotif["totCD"]/largeurDeDivision)
     tCD()
 if totMotif["totCE"] != 0:
-    turtle.pensize(totMotif["totCE"]/100)
+    turtle.pensize(totMotif["totCE"]/largeurDeDivision)
     tCE()
 if totMotif["totCF"] != 0:
-    turtle.pensize(totMotif["totCF"]/100)
+    turtle.pensize(totMotif["totCF"]/largeurDeDivision)
     tCF()
 if totMotif["totCG"] != 0:
-    turtle.pensize(totMotif["totCG"]/100)
+    turtle.pensize(totMotif["totCG"]/largeurDeDivision)
     tCG()
 if totMotif["totCH"] != 0:
-    turtle.pensize(totMotif["totCH"]/100)
+    turtle.pensize(totMotif["totCH"]/largeurDeDivision)
     tCH()
 if totMotif["totCI"] != 0:
-    turtle.pensize(totMotif["totCI"]/100)
+    turtle.pensize(totMotif["totCI"]/largeurDeDivision)
     tCI()
 if totMotif["totDE"] != 0:
-    turtle.pensize(totMotif["totDE"]/100)
+    turtle.pensize(totMotif["totDE"]/largeurDeDivision)
     tDE()
 if totMotif["totDF"] != 0:
-    turtle.pensize(totMotif["totDF"]/100)
+    turtle.pensize(totMotif["totDF"]/largeurDeDivision)
     tDF()
 if totMotif["totDG"] != 0:
-    turtle.pensize(totMotif["totDG"]/100)
+    turtle.pensize(totMotif["totDG"]/largeurDeDivision)
     tDG()
 if totMotif["totDH"] != 0:
-    turtle.pensize(totMotif["totDH"]/100)
+    turtle.pensize(totMotif["totDH"]/largeurDeDivision)
     tDH()
 if totMotif["totDI"] != 0:
-    turtle.pensize(totMotif["totDI"]/100)
+    turtle.pensize(totMotif["totDI"]/largeurDeDivision)
     tDI()
 if totMotif["totEF"] != 0:
-    turtle.pensize(totMotif["totEF"]/100)
+    turtle.pensize(totMotif["totEF"]/largeurDeDivision)
     tEF()
 if totMotif["totEG"] != 0:
-    turtle.pensize(totMotif["totEG"]/100)
+    turtle.pensize(totMotif["totEG"]/largeurDeDivision)
     tEG()
 if totMotif["totEH"] != 0:
-    turtle.pensize(totMotif["totEH"]/100)
+    turtle.pensize(totMotif["totEH"]/largeurDeDivision)
     tEH()
 if totMotif["totEI"] != 0:
-    turtle.pensize(totMotif["totEI"]/100)
+    turtle.pensize(totMotif["totEI"]/largeurDeDivision)
     tEI()
 if totMotif["totFG"] != 0:
-    turtle.pensize(totMotif["totFG"]/100)
+    turtle.pensize(totMotif["totFG"]/largeurDeDivision)
     tFG()
 if totMotif["totFH"] != 0:
-    turtle.pensize(totMotif["totFH"]/100)
+    turtle.pensize(totMotif["totFH"]/largeurDeDivision)
     tFH()
 if totMotif["totFI"] != 0:
-    turtle.pensize(totMotif["totFI"]/100)
+    turtle.pensize(totMotif["totFI"]/largeurDeDivision)
     tFI()
 if totMotif["totGH"] != 0:
-    turtle.pensize(totMotif["totGH"]/100)
+    turtle.pensize(totMotif["totGH"]/largeurDeDivision)
     tGH()
 if totMotif["totGI"] != 0:
-    turtle.pensize(totMotif["totGI"]/100)
+    turtle.pensize(totMotif["totGI"]/largeurDeDivision)
     tGI()
 if totMotif["totHI"] != 0:
-    turtle.pensize(totMotif["totHI"]/100)
+    turtle.pensize(totMotif["totHI"]/largeurDeDivision)
     tHI()
 
 # Fermer la fenêtre lors d'un clic
