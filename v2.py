@@ -21,6 +21,8 @@ image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
 width, height = image.size
+print("width :", width)
+print("height :", height)
 
 for x in range(width):
     for y in range(height):
@@ -81,49 +83,55 @@ def motif(i,j):
             print("m=", m, " n=", n)
             if coorclous['x',i] < coorclous['x',j]:
                 print("coorclous['x',i] < coorclous['x',j]")
-                if coorclous['x',i] < (((2 / width) - 1) * m + 0.5) < coorclous['x',j]:
+                if coorclous['x',i] < (((2 / width) * (m + 0.5)) - 1) < coorclous['x',j]:
                     print("georges sand")
                     if coorclous['y',i] < coorclous['y',j]:
                         print("georges 2")
                         print("coorclous['y',i] =", coorclous['y',i])
-                        print("(((2 / width) - 1) * n + 0.5)", (((2 / width) - 1) * n + 0.5))
+                        print("(((2 / width) - 1) * n + 0.5)", (((2 / width) * (n + 0.5)) - 1))
                         print("coorclous['y',j]", coorclous['y',j])
-                        if coorclous['y',i] < (((2 / width) - 1) * n + 0.5) < coorclous['y',j]:
+                        if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
                             print("georges 3")
-                            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
-                elif coorclous['x',i] < (((2 / width) - 1) * m + 0.5) < coorclous['x',j]:
+                elif coorclous['x',i] < (((2 / width) * (m + 0.5)) - 1) < coorclous['x',j]:
                     if coorclous['y',i] > coorclous['y',j]:
-                        if coorclous['y',i] > (((2 / width) - 1) * n + 0.5) > coorclous['y',j]:
-                            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                        if coorclous['y',i] > (((2 / width) * (n + 0.5)) - 1) > coorclous['y',j]:
+                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
             elif coorclous['x',i] > coorclous['x',j]:
-                if coorclous['x',i] > (((2 / width) - 1) * m + 0.5) > coorclous['x',j]:
+                if coorclous['x',i] > (((2 / width) * (m + 0.5)) - 1) > coorclous['x',j]:
+                    print("coorclous['x',i]", coorclous['x',i])
+                    print("(((2 / width) * (m + 0.5)) - 1)", (((2 / width) * (m + 0.5)) - 1))
+                    print("coorclous['x',j]", coorclous['x',j])
                     print("georges sand")
                     if coorclous['y',i] > coorclous['y',j]:
                         print("georges 2")
-                        if coorclous['y',i] > (((2 / width) - 1) * n + 0.5) > coorclous['y',j]:
+                        if coorclous['y',i] > (((2 / width) * (n + 0.5)) - 1) > coorclous['y',j]:
+                            print("coorclous['y',i]", coorclous['y',i])
+                            print("(((2 / width) * (n + 0.5)) - 1)", (((2 / width) * (n + 0.5)) - 1))
+                            print("coorclous['y',j]", coorclous['y',j])
                             print("georges 3")
                             print("\n Test :")
-                            print((((2 / width) - 1) * m)"", (((2 / width) - 1) * m))
-                            print("", )
-                            print("", )
-                            print("", )
-                            print("", )
-                            print("", )
+                            print("(((2 / width) - 1) * m)", (((2 / width) * m)) - 1)
+                            print("((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite)", ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite))
+                            print("(((2 / width) * (m + 1)) - 1)", (((2 / width) * (m + 1)) - 1))
+                            print("(((2 / height) * n) - 1)", (((2 / height) * n) - 1))
+                            print("(coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i]))", (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])))
+                            print("(((2 / height) * (n + 1)) - 1)", (((2 / height) * (n + 1)) - 1))
                             print("\n")
-                            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
-                elif coorclous['x',i] > (((2 / width) - 1) * m + 0.5) > coorclous['x',j]:
+                elif coorclous['x',i] > (((2 / width) * (m + 0.5)) - 1) > coorclous['x',j]:
                     print("ageorges sand")
                     if coorclous['y',i] < coorclous['y',j]:
                         print("ageorges 2")
-                        if coorclous['y',i] < (((2 / width) - 1) * n + 0.5) < coorclous['y',j]:
+                        if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
                             print("ageorges 3")
-                            if (((2 / width) - 1) * m) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / width) - 1) * (m + 1)) and (((2 / height) - 1) * n) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) - 1) * (n + 1)):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
 
@@ -137,3 +145,7 @@ print("case = ", case)
 #for i in range(clous):
 #    for j in range(clous):
 #        if j > i:
+
+# Equation de droite :
+# n = (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i]))
+# m = ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite)
