@@ -92,13 +92,13 @@ def motif(i,j):
                         print("coorclous['y',j]", coorclous['y',j])
                         if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
                             print("georges 3")
-                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < (((((2 / width) * (n + 0.5)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 0.5)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
                 elif coorclous['x',i] < (((2 / width) * (m + 0.5)) - 1) < coorclous['x',j]:
                     if coorclous['y',i] > coorclous['y',j]:
                         if coorclous['y',i] > (((2 / width) * (n + 0.5)) - 1) > coorclous['y',j]:
-                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < (((((2 / width) * (n + 0.5)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 0.5)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
             elif coorclous['x',i] > coorclous['x',j]:
@@ -122,7 +122,7 @@ def motif(i,j):
                             print("(coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i]))", (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])))
                             print("(((2 / height) * (n + 1)) - 1)", (((2 / height) * (n + 1)) - 1))
                             print("\n")
-                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < (((((2 / width) * (n + 0.5)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 0.5)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
                 elif coorclous['x',i] > (((2 / width) * (m + 0.5)) - 1) > coorclous['x',j]:
@@ -131,7 +131,7 @@ def motif(i,j):
                         print("ageorges 2")
                         if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
                             print("ageorges 3")
-                            if (((2 / width) * m) - 1) < ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                            if (((2 / width) * m) - 1) < (((((2 / width) * (n + 0.5)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) and (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 0.5)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1):   # ((2 / width) - 1) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                 case[m,n] = case[m,n] + 1
                                 print("case[m,n] = case[m,n] + 1")
 
