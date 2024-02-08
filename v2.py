@@ -39,19 +39,18 @@ cases = np.zeros((height,width))
 print(cases)
 print(obj)
 
-obj = np.zeros((height,width))
 
 # Créer dico cases
-case = {}
+# case = {}
 
-for i in range(width):
-    for y in range(height):
-        case[i,y] = 0
+# for i in range(width):
+#     for y in range(height):
+#         case[i,y] = 0
 
 
 
-print("case : ", case)
-print("objectif : ", objectif)
+# print("case : ", case)
+# print("objectif : ", objectif)
 
 
 
@@ -153,11 +152,117 @@ for i in range(clous):
                                         # case[m,n] = case[m,n] + 1
                                         print("case[m,n] = case[m,n] + 1")
 
+# Définir les motifs élémentaires inverses
+rmotif = {}
 
+for i in range(clous):
+    for j in range(clous):
+        if i < j:
+            rmotif[i,j] = np.zeros((height,width))
+            print("coorclous['x',i]", coorclous['x',i])
+            print("coorclous['x',j]", coorclous['x',j])
+            print("coorclous['y',i]", coorclous['y',i])
+            print("coorclous['y',j]", coorclous['y',j])
+            # Définir les équations de droites
+            coef_droite = (coorclous['y',j] - coorclous['y',i]) / (coorclous['x',j] - coorclous['x',i])
+            print("coef_droite=", coef_droite)
+            for m in range(width):
+                for n in range(height):
+                    print("m=", m, " n=", n)
+                    if coorclous['x',i] < coorclous['x',j]:
+                        print("coorclous['x',i] < coorclous['x',j]")
+                        if coorclous['x',i] < (((2 / width) * (m + 0.5)) - 1) < coorclous['x',j]:
+                            print("georges sand")
+                            if coorclous['y',i] < coorclous['y',j]:
+                                print("georges 2")
+                                print("coorclous['y',i] =", coorclous['y',i])
+                                print("(((2 / width) - 1) * n + 0.5)", (((2 / width) * (n + 0.5)) - 1))
+                                print("coorclous['y',j]", coorclous['y',j])
+                                if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
+                                    print("georges 3")
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                                        # case[m,n] = case[m,n] + 1
+                                        rmotif[i,j][(m,n)] = rmotif[i,j][(m,n)] - 1
+                                        print("case[m,n] = case[m,n] - 1")
+                        elif coorclous['x',i] < (((2 / width) * (m + 0.5)) - 1) < coorclous['x',j]:
+                            if coorclous['y',i] > coorclous['y',j]:
+                                if coorclous['y',i] > (((2 / width) * (n + 0.5)) - 1) > coorclous['y',j]:
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
+                                        rmotif[i,j][(m,n)] = rmotif[i,j][(m,n)] - 1
+                                        # case[m,n] = case[m,n] + 1
+                                        print("case[m,n] = case[m,n] - 1")
+                    elif coorclous['x',i] > coorclous['x',j]:
+                        if coorclous['x',i] > (((2 / width) * (m + 0.5)) - 1) > coorclous['x',j]:
+                            print("coorclous['x',i]", coorclous['x',i])
+                            print("(((2 / width) * (m + 0.5)) - 1)", (((2 / width) * (m + 0.5)) - 1))
+                            print("coorclous['x',j]", coorclous['x',j])
+                            print("georges sand")
+                            if coorclous['y',i] > coorclous['y',j]:
+                                print("georges 2")
+                                if coorclous['y',i] > (((2 / width) * (n + 0.5)) - 1) > coorclous['y',j]:
+                                    print("coorclous['y',i]", coorclous['y',i])
+                                    print("(((2 / width) * (n + 0.5)) - 1)", (((2 / width) * (n + 0.5)) - 1))
+                                    print("coorclous['y',j]", coorclous['y',j])
+                                    print("georges 3")
+                                    print("\n Test :")
+                                    print("(((2 / width) - 1) * m)", (((2 / width) * m)) - 1)
+                                    print("((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite)", ((n - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite))
+                                    print("(((2 / width) * (m + 1)) - 1)", (((2 / width) * (m + 1)) - 1))
+                                    print("(((2 / height) * n) - 1)", (((2 / height) * n) - 1))
+                                    print("(coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i]))", (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])))
+                                    print("(((2 / height) * (n + 1)) - 1)", (((2 / height) * (n + 1)) - 1))
+                                    print("\n")
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
+                                        rmotif[i,j][(m,n)] = rmotif[i,j][(m,n)] - 1
+                                        # case[m,n] = case[m,n] + 1
+                                        print("case[m,n] = case[m,n] - 1")
+                        elif coorclous['x',i] > (((2 / width) * (m + 0.5)) - 1) > coorclous['x',j]:
+                            print("ageorges sand")
+                            if coorclous['y',i] < coorclous['y',j]:
+                                print("ageorges 2")
+                                if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
+                                    print("ageorges 3")
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
+                                        rmotif[i,j][(m,n)] = rmotif[i,j][(m,n)] - 1
+                                        # case[m,n] = case[m,n] + 1
+                                        print("case[m,n] = case[m,n] - 1")
+
+# Indice de choix du motif
+dico_idM = {"idM": 0}
+
+def idMotif():
+    dico_idM["idM"] = 0
+    for m in range(width):
+        for n in range(height):
+            dico_idM["idM"] = dico_idM["idM"] + abs(obj[(m,n)] - cases[(m,n)])
+
+idM_motif = {}
+
+for i in range(clous):
+    for j in range(clous):
+        if i < j:
+# à résoudre            idM_motif["id{i}{j}"]
+print("idM_motif", idM_motif)
 
 #motif(2,5)
-print(motif[2,5])
-print("case = ", case)
+print("obj = ", obj)
+idMotif()
+print("dico_idM[idM]", dico_idM["idM"])
+
+print("motif[2,5]", motif[2,5])
+print("cases = ", cases)
+idMotif()
+print("dico_idM[idM]", dico_idM["idM"])
+
+print("rmotif[2,5]", rmotif[2,5])
+print("cases = ", cases)
+idMotif()
+print("dico_idM[idM]", dico_idM["idM"])
+
+print("motif[3,7]", motif[3,7])
+print("cases = ", cases)
+idMotif()
+print("dico_idM[idM]", dico_idM["idM"])
 
 
 # Pour autant de loop que de motifs
