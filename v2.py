@@ -17,7 +17,7 @@ objectif = {}
 
 from PIL import Image
 
-image = Image.open("./test.png")
+image = Image.open("./img_lune.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
@@ -104,14 +104,14 @@ for i in range(clous):
                                 #print("coorclous['y',j]", coorclous['y',j])
                                 if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
                                     #print("georges 3")
-                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) or ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):   # (2 / width) est la largeur d'une case quand la grille fait la taille du cecle trigo
                                         # case[m,n] = case[m,n] + 1
                                         motif[i,j][(m,n)] = motif[i,j][(m,n)] + 1
                                         #print("case[m,n] = case[m,n] + 1")
                         elif coorclous['x',i] < (((2 / width) * (m + 0.5)) - 1) < coorclous['x',j]:
                             if coorclous['y',i] > coorclous['y',j]:
                                 if coorclous['y',i] > (((2 / width) * (n + 0.5)) - 1) > coorclous['y',j]:
-                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) or ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
                                         motif[i,j][(m,n)] = motif[i,j][(m,n)] + 1
                                         # case[m,n] = case[m,n] + 1
                                         #print("case[m,n] = case[m,n] + 1")
@@ -136,7 +136,7 @@ for i in range(clous):
                                     #print("(coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i]))", (coef_droite * m + coorclous['y',i] - (coef_droite * coorclous['x',i])))
                                     #print("(((2 / height) * (n + 1)) - 1)", (((2 / height) * (n + 1)) - 1))
                                     #print("\n")
-                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) or ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
                                         motif[i,j][(m,n)] = motif[i,j][(m,n)] + 1
                                         # case[m,n] = case[m,n] + 1
                                         #print("case[m,n] = case[m,n] + 1")
@@ -146,7 +146,7 @@ for i in range(clous):
                                 #print("ageorges 2")
                                 if coorclous['y',i] < (((2 / width) * (n + 0.5)) - 1) < coorclous['y',j]:
                                     #print("ageorges 3")
-                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) and ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
+                                    if ((((2 / width) * m) - 1) < (((((2 / width) * n) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1) or (((2 / width) * m) - 1) < (((((2 / width) * (n + 1)) - 1) - (coorclous['y',i] - (coef_droite * coorclous['x',i]))) / coef_droite) < (((2 / width) * (m + 1)) - 1)) or ((((2 / height) * n) - 1) < (coef_droite * (((2 / width) * m) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1) or (((2 / height) * n) - 1) < (coef_droite * (((2 / width) * (m + 1)) - 1) + coorclous['y',i] - (coef_droite * coorclous['x',i])) < (((2 / height) * (n + 1)) - 1)):
                                         motif[i,j][(m,n)] = motif[i,j][(m,n)] + 1
                                         # case[m,n] = case[m,n] + 1
                                         #print("case[m,n] = case[m,n] + 1")
@@ -162,11 +162,15 @@ for m in range(width):
 # Indice de choix du motif
 dico_idM = {"idM": 0}
 
-def idMotif():
+def idMotif(cases):
     dico_idM["idM"] = 0
+    print("cases idMotif : ", cases)
     for m in range(width):
         for n in range(height):
             dico_idM["idM"] = dico_idM["idM"] + abs(obj[(m,n)] - cases[(m,n)])
+
+            
+            #print("dico_idM[idM] :", dico_idM["idM"])
 
 idM_motif = {}
 
@@ -177,15 +181,20 @@ def idM_par_motif(cases):
         for j in range(clous):
             if i < j:
             #    print(cases)
-            #    print(motif[i,j])
+                print("coucou")
+                print("motif[2,5]", motif[2,5])
+                print("motif[",i,",",j,"]", motif[i,j])
             #    for m in range(width):
             #        for n in range(height):
             #            cases[i,j][(m,n)] = cases[i,j][(m,n)] + motif[i,j][(m,n)]
             #    cases[i,j] = np.add(cases[i,j],motif[i,j])
                 cases = cases + motif[i,j]
-                idMotif()
+                print("---------")
+                print(cases)
+                idMotif(cases)
                 idM_motif[i,j] = dico_idM["idM"]
                 cases = cases - motif[i,j]
+                print("idM_motif[",i,",",j,"]", idM_motif[i,j])
 
 
 # Nombre d'utilisation totale de chaque motif
@@ -198,6 +207,8 @@ print("Valeurs initiales des cases :", cases)
 #while totMotif["totEND"] == 0:
 for i in range(10):
     idM_par_motif(cases)   # Définir l'indice de choix du motif
+
+    print("idM_motif :", idM_motif)
 
     res =  [key for key in idM_motif if     # Choisir le motif qui a le plus faible idM
         all(idM_motif[temp] >= idM_motif[key]
@@ -224,23 +235,23 @@ for i in range(10):
 print("idM_motif", idM_motif)
 
 #motif(2,5)
-print("obj = ", obj)
-idMotif()
-print("dico_idM[idM]", dico_idM["idM"])
+#print("obj = ", obj)
+#idMotif()
+#print("dico_idM[idM]", dico_idM["idM"])
 
 print("motif[2,5]", motif[2,5])
 print("cases = ", cases)
 idMotif()
 print("dico_idM[idM]", dico_idM["idM"])
 
-print("cases = ", cases)
-idMotif()
-print("dico_idM[idM]", dico_idM["idM"])
+#print("cases = ", cases)
+#idMotif()
+#print("dico_idM[idM]", dico_idM["idM"])
 
-print("motif[3,7]", motif[3,7])
-print("cases = ", cases)
-idMotif()
-print("dico_idM[idM]", dico_idM["idM"])
+#print("motif[3,7]", motif[3,7])
+#print("cases = ", cases)
+#idMotif()
+#print("dico_idM[idM]", dico_idM["idM"])
 
 
 # Pour autant de loop que de motifs
