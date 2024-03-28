@@ -205,15 +205,28 @@ totMotif["totEND"] = 0
 print("Valeurs initiales des cases :", cases)
 
 #while totMotif["totEND"] == 0:
-for i in range(10):
+for i in range(3):
     idM_par_motif(cases)   # Définir l'indice de choix du motif
 
     print("idM_motif :", idM_motif)
 
+    #res = 0
+    #int(res)
     res =  [key for key in idM_motif if     # Choisir le motif qui a le plus faible idM
         all(idM_motif[temp] >= idM_motif[key]
         for temp in idM_motif)]
     print("Keys with minimum values are : " + str(res))
+    print("Keys with minimum values are : ", res)
+    # ICI IL FAUT ARRETER LA BOUCLE QUAND END
+    for i in [res]:
+        for m in range(width):
+            for n in range(height):
+                print("cases : ", cases[m,n])
+                a=i[0][0]
+                b=i[0][1]
+                print(motif[a,b][m,n])#motif[[(0, 6)]]
+                cases[m,n] = cases[m,n] + motif[a,b][m,n]
+    print("cases + res : ", cases)
 
 #    for i in range(clous):
 #        for j in range(clous):
@@ -239,10 +252,10 @@ print("idM_motif", idM_motif)
 #idMotif()
 #print("dico_idM[idM]", dico_idM["idM"])
 
-print("motif[2,5]", motif[2,5])
+#print("motif[2,5]", motif[2,5])
 print("cases = ", cases)
-idMotif()
-print("dico_idM[idM]", dico_idM["idM"])
+#idMotif(cases)
+#print("dico_idM[idM]", dico_idM["idM"])
 
 #print("cases = ", cases)
 #idMotif()
