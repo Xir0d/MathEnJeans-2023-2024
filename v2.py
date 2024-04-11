@@ -15,7 +15,7 @@ objectif = {}
 
 from PIL import Image
 
-image = Image.open("./img_a2.png")
+image = Image.open("./img_pi.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
