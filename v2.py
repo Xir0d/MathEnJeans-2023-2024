@@ -15,7 +15,7 @@ objectif = {}
 
 from PIL import Image
 
-image = Image.open("./img_pi.png")
+image = Image.open("./spirale.png")
 image = image.convert('L')  # Conversion en 256 nuances de gris
 #   image.show()
 
@@ -77,7 +77,7 @@ for i in range(clous):
 
             # Définir les équations de droites
             if (coorclous['x',j] - coorclous['x',i]) == 0:
-                coef_droite = 0.0000000000000001            # pour éviter division par 0
+                coef_droite = (coorclous['y',j] - coorclous['y',i]) / 0.0000000000000001            # pour éviter division par 0
             else:
                 coef_droite = (coorclous['y',j] - coorclous['y',i]) / (coorclous['x',j] - coorclous['x',i])
             
